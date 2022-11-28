@@ -16,398 +16,366 @@
       "fewinstock": "Few in stock",
       "outofstock": "Out of stock",
       "description": "G2.1 is the next logical evolutionary step, resulting from a desire to improve upon the original G2 series. At AURALiC, we always work to create a new approach to digital music that pushes the boundaries of sonic quality. Incorporating state-of-the-art technologies and delivered with innovative features, G2.1 is built for ultimate levels of sonic performance. Every G2.1 series component, including the ARIES G2.1, sports an all-new industrial design that’s engineered to set a new standard for sound quality, enhance the user experience, and look every bit as good as it sounds with its contemporary aesthetic. Offering features like a copper enclosure, a high-mass base, and an enhanced suspension system optimizes the sound of the ARIES G2.1 and ensures it is the most capable and feature-rich way to introduce streaming to your audio system that we’ve ever created.",
-      "colors": [
-        "Black",
-        "Silver",
-        "Gold"
+      "colors": ["Black", "Silver", "Gold"]
+    },
+    {
+      "specifications-1": [
+        {
+          "Mechanism": "JTL-101Y",
+          "D/A Conversion": "ESS Hyper Stream",
+          "DAC IC ES9016": "dfsgds",
+          "Digital Filter": "ES9016",
+          "Noise Shaper": "ES9016",
+          "Low Pass Filter": "stage HDAM",
+          "Output Buffer": "HDAM SA2",
+          "Headphone amp": "HDAM SA2",
+          "Frequency Response": "2Hz x 20kHz",
+          "Dynamic Range": "100dB",
+          "Signal to Noise Ratio": "110 dB",
+          "Total Harmonic Distortion": "0.00002",
+          "Channel Separation": "105dB"
+        }
+      ],
+      "general-1": [
+        {
+          "Panel": "Metal Front Panel",
+          "Remote Control": " RC001PMND",
+          "Power Consumption in W": " 42",
+          "Standby Consumption in W": "0.3",
+          "Auto power off": "Detachable Power Cable",
+          "Maximum Dimensions (W x D x H) in mm": "440 x 341 x 106",
+          "Weight in kg": "8"
+        }
       ]
     },
     {
-        "specifications-1": [
-            {
-                "Mechanism": "JTL-101Y",
-                "D/A Conversion": "ESS Hyper Stream",
-                "DAC IC ES9016": "dfsgds",
-                "Digital Filter": "ES9016",
-                "Noise Shaper": "ES9016",
-                "Low Pass Filter": "stage HDAM",
-                "Output Buffer": "HDAM SA2",
-                "Headphone amp": "HDAM SA2",
-                "Frequency Response": "2Hz x 20kHz",
-                "Dynamic Range": "100dB",
-                "Signal to Noise Ratio": "110 dB",
-                "Total Harmonic Distortion": "0.00002",
-                "Channel Separation": "105dB"
-            }
-        ],
-        "general-1": [
-            {
-                "Panel": "Metal Front Panel",
-                "Remote Control": " RC001PMND",
-                "Power Consumption in W": " 42",
-                "Standby Consumption in W": "0.3",
-                "Auto power off": "Detachable Power Cable",
-                "Maximum Dimensions (W x D x H) in mm": "440 x 341 x 106",
-                "Weight in kg": "8"
-            }
-        ]
+      "id": "dvd-player",
+      "image": [
+        "creek_classic.jpg",
+        "exposure_2010S.jpg",
+        "parasound_d200.jpg",
+        "parasound_halod3.jpg"
+      ],
+      "title": "Dvd Player",
+      "subtitle": "Digital output",
+      "price": "3000",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "dvd-player",
-        "image": [
-            "creek_classic.jpg",
-            "exposure_2010S.jpg",
-            "parasound_d200.jpg",
-            "parasound_halod3.jpg"
-        ],
-        "title": "Dvd Player",
-        "subtitle": "Digital output",
-        "price": "3000",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ]
+      "specifications-2": [
+        {
+          "Mechanism": "SACD-M3 (METAL)",
+          "D/A Conversion": "Marantz Musical Mastering Conversion + Stream",
+          "DAC IC  Marantz": "Musical Mastering Conversion + Stream",
+          "Digital Filter": "DSP (Marantz)",
+          "Noise Shaper": "DSP (Marantz)",
+          "Low Pass Filter stage": "HDAM-SA2, SA3 current feedback",
+          "Output buffer": "HDAM SA3",
+          "Headphone amp": "HDAM-SA2 current feedback",
+          "Frequency Response (Cust.)": "2 Hz x 50 kHz",
+          "Dynamic Range (SA)": "109dB",
+          "Signal to Noise Ratio (SA)": "112dB",
+          "Total Harmonic Distortion (SA)": "0.0008%",
+          "Frequency Response": "2 Hz x 20 kHz",
+          "Dynamic Range": "98 dB",
+          "Signal to Noise Ratio": "104 dB",
+          "Total Harmonic Distortion": "0.000015"
+        }
+      ],
+      "general-2": [
+        {
+          "Metal Front Panel": "Remote Control RC005PMSA",
+          "Power Consumption in W": "47",
+          "Standby Consumption in W": "0.32",
+          "Auto power off": "Detachable Power Cable",
+          "Maximum Dimensions (W x D x H) in mm": "440 x 419 x 123",
+          "Weight in kg": "16.4",
+          "Carton Maximum Dimensions (W x D x H) in mm": "557 x 536 x 243",
+          "Carton Weight (inc. product) in kg": "19.6"
+        }
+      ]
     },
     {
-        "specifications-2": [
-            {
-                "Mechanism": "SACD-M3 (METAL)",
-                "D/A Conversion": "Marantz Musical Mastering Conversion + Stream",
-                "DAC IC  Marantz": "Musical Mastering Conversion + Stream",
-                "Digital Filter": "DSP (Marantz)",
-                "Noise Shaper": "DSP (Marantz)",
-                "Low Pass Filter stage": "HDAM-SA2, SA3 current feedback",
-                "Output buffer": "HDAM SA3",
-                "Headphone amp": "HDAM-SA2 current feedback",
-                "Frequency Response (Cust.)": "2 Hz x 50 kHz",
-                "Dynamic Range (SA)": "109dB",
-                "Signal to Noise Ratio (SA)": "112dB",
-                "Total Harmonic Distortion (SA)": "0.0008%",
-                "Frequency Response": "2 Hz x 20 kHz",
-                "Dynamic Range": "98 dB",
-                "Signal to Noise Ratio": "104 dB",
-                "Total Harmonic Distortion": "0.000015"
-            }
-        ],
-        "general-2": [
-            {
-                "Metal Front Panel": "Remote Control RC005PMSA",
-                "Power Consumption in W": "47",
-                "Standby Consumption in W": "0.32",
-                "Auto power off": "Detachable Power Cable",
-                "Maximum Dimensions (W x D x H) in mm": "440 x 419 x 123",
-                "Weight in kg": "16.4",
-                "Carton Maximum Dimensions (W x D x H) in mm": "557 x 536 x 243",
-                "Carton Weight (inc. product) in kg": "19.6"
-            }
-        ]
+      "specifications-3": [
+        {
+          "Power Output (8 / 4 Ohm RMS)": "75W“",
+          "Frequency Response": "10 Hz-100 kHz",
+          "Total Harmonic Distortion": "0.01%",
+          "Input Sensitivity": "MM: 2.5 mV/47 kohm",
+          "Signal to Noise Ratio": "High level 98dB"
+        }
+      ],
+      "general-3": [
+        {
+          "Power Consumption in W": "210",
+          "Standby Consumption in W": "0.2",
+          "Auto power off": "Detachable Power Cable",
+          "Remote Control": "RC041SR",
+          "SRF": "System Remote Function",
+          "Maximum Dimensions (W x D x H) in mm": "440 x 378 x 105",
+          "Weight in kg": "7.9",
+          "Carton Maximum Dimensions (W x D x H) in mm": "520 x 461 x 184",
+          "Carton Weight (inc. product) in kg": "9.9"
+        }
+      ]
     },
     {
-        "specifications-3": [
-            {
-                "Power Output (8 / 4 Ohm RMS)": "75W“",
-                "Frequency Response": "10 Hz-100 kHz",
-                "Total Harmonic Distortion": "0.01%",
-                "Input Sensitivity": "MM: 2.5 mV/47 kohm",
-                "Signal to Noise Ratio": "High level 98dB"
-            }
-        ],
-        "general-3": [
-            {
-                "Power Consumption in W": "210",
-                "Standby Consumption in W": "0.2",
-                "Auto power off": "Detachable Power Cable",
-                "Remote Control": "RC041SR",
-                "SRF": "System Remote Function",
-                "Maximum Dimensions (W x D x H) in mm": "440 x 378 x 105",
-                "Weight in kg": "7.9",
-                "Carton Maximum Dimensions (W x D x H) in mm": "520 x 461 x 184",
-                "Carton Weight (inc. product) in kg": "9.9"
-            }
-        ]  
+      "id": "power-amplifier",
+      "image": [
+        "manley_mahi.jpg",
+        "manley_neoclassic300b.jpg",
+        "manley_snapper.jpg",
+        "parasound_haloa23.jpg"
+      ],
+      "title": "Power Amplifier",
+      "subtitle": "Digital output",
+      "price": "5000",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "power-amplifier",
-        "image": [
-            "manley_mahi.jpg",
-            "manley_neoclassic300b.jpg",
-            "manley_snapper.jpg",
-            "parasound_haloa23.jpg"
-        ],
-        "title": "Power Amplifier",
-        "subtitle": "Digital output",
-        "price": "5000",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ]
+      "id": "preamplifier",
+      "image": [
+        "Creek_OBH_22_Passive_Preamp.jpg",
+        "parasound_classic7100.jpg",
+        "parasound_halop3.jpg",
+        "Project_prebox.jpg"
+      ],
+      "title": "Power Amplifier",
+      "subtitle": "Digital output",
+      "price": "5000",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "preamplifier",
-        "image": [
-            "Creek_OBH_22_Passive_Preamp.jpg",
-            "parasound_classic7100.jpg",
-            "parasound_halop3.jpg",
-            "Project_prebox.jpg"
-        ],
-        "title": "Power Amplifier",
-        "subtitle": "Digital output",
-        "price": "5000",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ] 
+      "id": "speaker",
+      "image": [
+        "boesendorfer_vcs_wall.gif",
+        "epos_m5.gif",
+        "harbeth_hl7es2.jpg",
+        "harbeth_monitor30.jpg",
+        "harbeth_p3es2.jpg"
+      ],
+      "title": "Speaker",
+      "subtitle": "Digital output",
+      "price": "8000",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "speaker",
-        "image": [
-            "boesendorfer_vcs_wall.gif",
-            "epos_m5.gif",
-            "harbeth_hl7es2.jpg",
-            "harbeth_monitor30.jpg",
-            "harbeth_p3es2.jpg"
-        ],
-        "title": "Speaker",
-        "subtitle": "Digital output",
-        "price": "8000",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ] 
+      "specifications-4": [
+        {
+          "Power Output": "(8 / 4 Ohm RMS) 45W/60W",
+          "Frequency Response": "10 Hz - 70 kHz",
+          "Total Harmonic Distortion": "0.08%",
+          "Damping Factor": "100",
+          "Input Sensitivity low": "2.2 mV/47 kOhm",
+          "Signal to Noise Ratio MM": "asfgaf",
+          "Input Sensitivity high": "200mV/20kOhm",
+          "Signal to Noise Ratio": "High level 102dB(2V input)"
+        }
+      ],
+      "general-4": [
+        {
+          "Power Consumption in W": "155",
+          "Standby Consumption in W": "0.3",
+          "Auto power off": "Detachable Power Cable",
+          "Remote Control": "RC004MCD",
+          "SRF": "System Remote Function",
+          "Maximum Dimensions (W x D x H) in mm": "440 x 370 x 105",
+          "Weight in kg": "7.6",
+          "Carton Maximum Dimensions (W x D x H) in mm": "517 x 189 x 468",
+          "Carton Weight (inc. product) in kg": "9.7"
+        }
+      ],
+      "specifications-5": [
+        {
+          "Power Output": "(8/4 Ohm RMS)  35 W/70 W",
+          "Frequency Response": "20 Hz-50 kHz",
+          "Total Harmonic Distortion": "0.05%",
+          "Input Sensitivity": "High level 200 mV / 22 kOhm",
+          "Signal to Noise Ratio": "105dB(2V input)"
+        }
+      ],
+      "general-5": [
+        {
+          "Power Consumption in W": "55",
+          "Standby Consumption in W": "0.3",
+          "Auto power off": "Detachable Power Cable",
+          "Remote Control RC002HD": "System Remote Function",
+          "Maximum Dimensions": "(W x D x H) in mm 304 x 107 x 352",
+          "Weight in kg": "5.8"
+        }
+      ],
+      "specifications-6": [
+        {
+          "Mechanism": "CJDKT690",
+          "D/A Conversion": "Multi-bit, Delta-Sigma",
+          "DAC IC": "CS4398",
+          "Digital Filter": "CS4398",
+          "Noise Shaper": "CS4398",
+          "Low Pass Filter stage": "HDAM",
+          "Headphone amp": "HDAM-SA2+Buffer",
+          "Frequency Response": "(Cust.)",
+          "Dynamic Range (SA)": "Signal to Noise Ratio (SA)",
+          "Total Harmonic Distortion (SA)": "Channel Separation (SA)",
+          "Frequency Response2nd": "20 Hz x 20 kHz",
+          "Dynamic Range": "100 dB",
+          "Signal to Noise Ratio": "110 dB",
+          "Total Harmonic Distortion": "0.00%",
+          "Channel Separation": "98dB"
+        }
+      ],
+      "general-6": [
+        {
+          "MFP": "Metal Front Panel",
+          "Remote Control": "RC003HD",
+          "Power Consumption in W": "14",
+          "Standby Consumption in W": "0.35",
+          "Auto power off": "Detachable Power Cable",
+          "Maximum Dimensions (W x D x H) in mm": "304 x 312 x 109",
+          "Weight in kg": "6"
+        }
+      ],
+      "specifications-7": [
+        {
+          "Speed": "33, 45, 78 (electronic speed change)",
+          "Drive principle": "belt drive",
+          "Platter": "300 mm aluminium",
+          "Mains bearing": "stainless steel",
+          "Wow & flutter 33": "±0.10 % 45” : “ ±0.09 %",
+          "Speed variance 33": "±0.13 % 45” : “ ±0.10 %",
+          "Signal to noise": "70dB",
+          "Tonearm 9": "carbon/aluminium sandwich tonearm",
+          "Effective arm length": "230 mm",
+          "Effective arm mass": "13.5 g",
+          "Overhang": "18 mm",
+          "Tracking force": "10 - 30mN",
+          "Included accessories": "15 volts DC / 0.8A power supply, dust cover",
+          "Power connection": "110/120 or 230/240 Volt - 50 or 60 Hz",
+          "Power consumption": "5 watt max / < 0.5 watt standby",
+          "Dimensions": "462 x 131 x 351 mm (WxHxD) lid closed",
+          "Weight": "10.5 kg net"
+        }
+      ]
     },
     {
-        "specifications-4": [
-            {
-                "Power Output": "(8 / 4 Ohm RMS) 45W/60W",
-                "Frequency Response": "10 Hz - 70 kHz",
-                "Total Harmonic Distortion": "0.08%",
-                "Damping Factor": "100",
-                "Input Sensitivity low": "2.2 mV/47 kOhm",
-                "Signal to Noise Ratio MM": "asfgaf",
-                "Input Sensitivity high": "200mV/20kOhm",
-                "Signal to Noise Ratio": "High level 102dB(2V input)"
-            }
-        ],
-        "general-4": [
-            {
-                "Power Consumption in W": "155",
-                "Standby Consumption in W": "0.3",
-                "Auto power off": "Detachable Power Cable",
-                "Remote Control": "RC004MCD",
-                "SRF": "System Remote Function",
-                "Maximum Dimensions (W x D x H) in mm": "440 x 370 x 105",
-                "Weight in kg": "7.6",
-                "Carton Maximum Dimensions (W x D x H) in mm": "517 x 189 x 468",
-                "Carton Weight (inc. product) in kg": "9.7"
-            }
-        ],
-        "specifications-5": [
-            {
-                "Power Output": "(8/4 Ohm RMS)  35 W/70 W",
-                "Frequency Response": "20 Hz-50 kHz",
-                "Total Harmonic Distortion": "0.05%",
-                "Input Sensitivity": "High level 200 mV / 22 kOhm",
-                "Signal to Noise Ratio": "105dB(2V input)"
-            }
-        ],
-        "general-5": [
-            {
-                "Power Consumption in W": "55",
-                "Standby Consumption in W": "0.3",
-                "Auto power off": "Detachable Power Cable",
-                "Remote Control RC002HD": "System Remote Function",
-                "Maximum Dimensions": "(W x D x H) in mm 304 x 107 x 352",
-                "Weight in kg": "5.8"
-            }
-        ],
-        "specifications-6": [
-            {
-                "Mechanism": "CJDKT690",
-                "D/A Conversion": "Multi-bit, Delta-Sigma",
-                "DAC IC": "CS4398",
-                "Digital Filter": "CS4398",
-                "Noise Shaper": "CS4398",
-                "Low Pass Filter stage": "HDAM",
-                "Headphone amp": "HDAM-SA2+Buffer",
-                "Frequency Response": "(Cust.)",
-                "Dynamic Range (SA)": "Signal to Noise Ratio (SA)",
-                "Total Harmonic Distortion (SA)": "Channel Separation (SA)",
-                "Frequency Response2nd": "20 Hz x 20 kHz",
-                "Dynamic Range": "100 dB",
-                "Signal to Noise Ratio": "110 dB",
-                "Total Harmonic Distortion": "0.00%",
-                "Channel Separation": "98dB"
-            }
-        ],
-        "general-6": [
-            {
-                "MFP": "Metal Front Panel",
-                "Remote Control": "RC003HD",
-                "Power Consumption in W": "14",
-                "Standby Consumption in W": "0.35",
-                "Auto power off": "Detachable Power Cable",
-                "Maximum Dimensions (W x D x H) in mm": "304 x 312 x 109",
-                "Weight in kg": "6"
-            }
-        ],
-        "specifications-7": [
-            {
-                "Speed": "33, 45, 78 (electronic speed change)",
-                "Drive principle": "belt drive",
-                "Platter": "300 mm aluminium",
-                "Mains bearing": "stainless steel",
-                "Wow & flutter 33": "±0.10 % 45” : “ ±0.09 %",
-                "Speed variance 33": "±0.13 % 45” : “ ±0.10 %",
-                "Signal to noise": "70dB",
-                "Tonearm 9": "carbon/aluminium sandwich tonearm",
-                "Effective arm length": "230 mm",
-                "Effective arm mass": "13.5 g",
-                "Overhang": "18 mm",
-                "Tracking force": "10 - 30mN",
-                "Included accessories": "15 volts DC / 0.8A power supply, dust cover",
-                "Power connection": "110/120 or 230/240 Volt - 50 or 60 Hz",
-                "Power consumption": "5 watt max / < 0.5 watt standby",
-                "Dimensions": "462 x 131 x 351 mm (WxHxD) lid closed",
-                "Weight": "10.5 kg net"
-            }
-        ] 
+      "id": "int-amplifier",
+      "image": [
+        "creek_a50I.jpg",
+        "creek_classic5350SE.jpg",
+        "creek_destinyamp.jpg",
+        "manley_snapper.jpg",
+        "Manley_Stingray.jpg"
+      ],
+      "title": "Int Amplifier",
+      "subtitle": "Digital output",
+      "price": "6000",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "int-amplifier",
-        "image": [
-            "creek_a50I.jpg",
-            "creek_classic5350SE.jpg",
-            "creek_destinyamp.jpg",
-            "manley_snapper.jpg",
-            "Manley_Stingray.jpg"
-        ],
-        "title": "Int Amplifier",
-        "subtitle": "Digital output",
-        "price": "6000",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ] 
+      "id": "vinyl-record",
+      "image": [
+        "Pro_ject_Debut_3_bl.jpg",
+        "Pro_ject_Debut_III_red_1.jpg",
+        "Pro_ject_Debut_III_yellow_1.jpg",
+        "Pro_ject_rpm_5.jpg",
+        "Pro_ject_rpm10.jpg"
+      ],
+      "title": "Vinyl Record",
+      "subtitle": "Digital output",
+      "price": "4500",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "vinyl-record",
-        "image": [
-            "Pro_ject_Debut_3_bl.jpg",
-            "Pro_ject_Debut_III_red_1.jpg",
-            "Pro_ject_Debut_III_yellow_1.jpg",
-            "Pro_ject_rpm_5.jpg",
-            "Pro_ject_rpm10.jpg"
-        ],
-        "title": "Vinyl Record",
-        "subtitle": "Digital output",
-        "price": "4500",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ] 
+      "id": "tube-amplifier",
+      "image": [
+        "jolida_JD102b.jpg",
+        "jolida_JD202a.jpg",
+        "jolida_JD300b.jpg",
+        "jolida_JD302b.jpg",
+        "jolida_JD502b.jpg"
+      ],
+      "title": "Tube Amplifier",
+      "subtitle": "Digital output",
+      "price": "5500",
+      "addtocart": "Add to cart",
+      "instock": "In stock",
+      "fewinstock": "Few in stock",
+      "outofstock": "Out of stock",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
+      "colors": ["Black", "Silver", "Gold"]
     },
     {
-        "id": "tube-amplifier",
-        "image": [
-            "jolida_JD102b.jpg",
-            "jolida_JD202a.jpg",
-            "jolida_JD300b.jpg",
-            "jolida_JD302b.jpg",
-            "jolida_JD502b.jpg"
-        ],
-        "title": "Tube Amplifier",
-        "subtitle": "Digital output",
-        "price": "5500",
-        "addtocart": "Add to cart",
-        "instock": "In stock",
-        "fewinstock": "Few in stock",
-        "outofstock": "Out of stock", 
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, mollitia at perferendis quam omnis nulla perspiciatis, nihil est expedita esse totam officiis ab odit. Quis aperiam alias iste illum! Repellendus aperiam cupiditate quidem. Neque non minus molestias aperiam eligendi hic distinctio tenetur, fugiat sequi nemo nobis quibusdam unde soluta suscipit, maxime dolorum vel dolore rem voluptas possimus! Asperiores enim natus molestias voluptate officiis at sapiente nesciunt voluptatibus alias blanditiis. Laudantium mollitia repellat delectus consequuntur iure fugit incidunt exercitationem reprehenderit alias sit ipsa, dignissimos aliquam sint possimus doloremque et, minus voluptatem tenetur nisi vel quo at quod. Recusandae iste corporis nihil.",
-        "colors": [
-            "Black",
-            "Silver",
-            "Gold"
-        ] 
+      "id": "faq1",
+      "text": "Here at Hi-Fi Corner, our trained product specialists aim to provide the right product for you. We take great care with all of our orders to ensure you are fully happy with the product.",
+      "faqtext": "We aim to resolve any problems to your satisfaction. Please contact us directly, if, for any reason, you have an issue with your order, your product or any other service provided. OUR GUARANTEE All items excluding ex-display and secondhand goods are covered by at least 12 months warranty; this is detailed on your receipt. Any secondhand or ex-display product is covered by at least 3 months warranty as noted in the original listing. Hi-Fi Corner cannot guarantee against any misuse (i.e. blown speakers etc.), commercial use, wear and tear, erosion of parts, loss of data stored on any form of writeable/hard drive devices, dead pixels of an amount not covered by the manufacturer’s specifications or where you have not allowed repairs of goods to be carried out by authorised agents. If it has been more than 30 days since you have received a product and discovered a fault, we will still repair the goods free of charge or, if you prefer, replace them provided that you report the fault within 12 months of purchase. If we are unable to repair or replace the item(s) we will provide you with a full refund instead.",
+      "morefaqtext": "Please note that if it is after the initial 30 days of purchase you must be able to certify the fault was present upon delivery and not by misuse."
     },
     {
-        "id": "faq1",
-        "text": "Here at Hi-Fi Corner, our trained product specialists aim to provide the right product for you. We take great care with all of our orders to ensure you are fully happy with the product.",
-        "faqtext": "We aim to resolve any problems to your satisfaction. Please contact us directly, if, for any reason, you have an issue with your order, your product or any other service provided. OUR GUARANTEE All items excluding ex-display and secondhand goods are covered by at least 12 months warranty; this is detailed on your receipt. Any secondhand or ex-display product is covered by at least 3 months warranty as noted in the original listing. Hi-Fi Corner cannot guarantee against any misuse (i.e. blown speakers etc.), commercial use, wear and tear, erosion of parts, loss of data stored on any form of writeable/hard drive devices, dead pixels of an amount not covered by the manufacturer’s specifications or where you have not allowed repairs of goods to be carried out by authorised agents. If it has been more than 30 days since you have received a product and discovered a fault, we will still repair the goods free of charge or, if you prefer, replace them provided that you report the fault within 12 months of purchase. If we are unable to repair or replace the item(s) we will provide you with a full refund instead.",
-        "morefaqtext": "Please note that if it is after the initial 30 days of purchase you must be able to certify the fault was present upon delivery and not by misuse."
+      "id": "faq2",
+      "faqrefunds": "REFUNDS",
+      "text": "Once your returned item is received and inspected, we will send you an email or phone call to notify you that we have received your returned item.We will also notify you of the approval or rejection of your refund.",
+      "faqtext": "If you are approved, then your refund will be processed, and a credit will automatically be applied to your original method of payment, within 3 working days. Please note we require an email address or contact number to arrange a refund that was purchased over the phone. There are certain situations where only partial refunds are granted or we cannot refund you; Any item not in its original condition, is damaged or missing parts for reasons not due to our error. Any damage that has been caused by misuse, such as a speaker drive unit being blown or water being introduced to the unit, or that has been damaged due to poor packing. Any item that is returned more than 30 days after delivery. In any instance, we will notify you as soon as possible to resolve this matter."
     },
     {
-        "id": "faq2",
-        "faqrefunds": "REFUNDS",
-        "text": "Once your returned item is received and inspected, we will send you an email or phone call to notify you that we have received your returned item.We will also notify you of the approval or rejection of your refund.",
-        "faqtext": "If you are approved, then your refund will be processed, and a credit will automatically be applied to your original method of payment, within 3 working days. Please note we require an email address or contact number to arrange a refund that was purchased over the phone. There are certain situations where only partial refunds are granted or we cannot refund you; Any item not in its original condition, is damaged or missing parts for reasons not due to our error. Any damage that has been caused by misuse, such as a speaker drive unit being blown or water being introduced to the unit, or that has been damaged due to poor packing. Any item that is returned more than 30 days after delivery. In any instance, we will notify you as soon as possible to resolve this matter."
+      "id": "faq3",
+      "faqshipping": "SHIPPING",
+      "text": "To return your product, you should mail your product to: 2 Joppa Road, Mackenzie House, Edinburgh, EH15 2EU.",
+      "faqtext": "If you would like to return an item, please note that we cannot arrange a collection of the item without additional cost; you will be responsible for ensuring the product reaches us. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund. Depending on where you live, the time it may take for your exchanged product to reach you may vary. We will process the refund when the item arrives with us.",
+      "morefaqtext": "If you are shipping an item over £100, we would advise using a trackable shipping service or purchasing shipping insurance. We cannot guarantee that we will receive your returned item."
     },
     {
-        "id": "faq3",
-        "faqshipping": "SHIPPING",
-        "text": "To return your product, you should mail your product to: 2 Joppa Road, Mackenzie House, Edinburgh, EH15 2EU.",
-        "faqtext": "If you would like to return an item, please note that we cannot arrange a collection of the item without additional cost; you will be responsible for ensuring the product reaches us. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund. Depending on where you live, the time it may take for your exchanged product to reach you may vary. We will process the refund when the item arrives with us.",
-        "morefaqtext": "If you are shipping an item over £100, we would advise using a trackable shipping service or purchasing shipping insurance. We cannot guarantee that we will receive your returned item."
-    },   
-    {
-        "id": "faq4",
-        "faqdelivery": "DELIVERY",
-        "text": "Please check the condition of all products delivered as soon as they are received. This does not affect your statutory rights. If there is a problem we would like to deal with this as soon as possible to alleviate any inconvenience to yourself.",
-        "faqtext": "As soon as we have delivered the goods to you, you will be responsible for them and any damage occasioned whilst in your possession. The majority of goods we send will require you to sign for them upon delivery. If you are not able to sign for a delivery, we will do our utmost to contact you to arrange when it is convenient to redeliver. Our responsibility for everything other than damage due to our negligence will end at the time the carrier tried to delivery the goods to you. If your product is visibly damaged in transit, please sign for the delivery as ‘damaged’ and let us know as soon as possible."
+      "id": "faq4",
+      "faqdelivery": "DELIVERY",
+      "text": "Please check the condition of all products delivered as soon as they are received. This does not affect your statutory rights. If there is a problem we would like to deal with this as soon as possible to alleviate any inconvenience to yourself.",
+      "faqtext": "As soon as we have delivered the goods to you, you will be responsible for them and any damage occasioned whilst in your possession. The majority of goods we send will require you to sign for them upon delivery. If you are not able to sign for a delivery, we will do our utmost to contact you to arrange when it is convenient to redeliver. Our responsibility for everything other than damage due to our negligence will end at the time the carrier tried to delivery the goods to you. If your product is visibly damaged in transit, please sign for the delivery as ‘damaged’ and let us know as soon as possible."
     },
     {
-        "id": "faq5",
-        "faqreturns": "RETURNS PROCESS/YOUR STATUTORY RIGHTS",
-        "text": "If you wish to return goods purchased online or over the phone, you should notify Hi-Fi Corner of your intention to do so within 14 days of the date of receipt.",
-        "faqtext": "You then have an additional 14 days to return the goods from this notification date (goods must be returned within 28 days). We will in such circumstances refund you the cost of your order, excluding postage or delivery cost. However, if goods are not returned 'as new' due to excessive handling on your part, or with components missing (including packing materials and manuals) we may make a reasonable deduction for this. Please do not send your product back to the manufacturer. We kindly ask that to make the refund process easier, that you include your receipt or proof of purchase and a cover letter detailing briefly why the item is being returned. We cannot refund the cost of delivery fees if there was an additional charge, only the cost of the goods themselves. We will process the refund when the item arrives with us. If you are shipping an item over £100, we would advise using a trackable shipping service or purchasing shipping insurance. We cannot guarantee that we will receive your returned item.",
-        "morefaqtext": "Please contact us before attempting to return your goods. For purchases bought in-store, you can also drop in and be refunded instantly."
-    },
-    { 
-        "id": "faq6",
-        "faqsale": "SALE ITEMS",
-        "text": "Only regularly priced items may be refunded, unfortunately clearance, special order and outlet items cannot be refunded unless they are found to be faulty on arrival. For more details about returning secondhand or sale items, please contact sales@hificorner.co.uk."
+      "id": "faq5",
+      "faqreturns": "RETURNS PROCESS/YOUR STATUTORY RIGHTS",
+      "text": "If you wish to return goods purchased online or over the phone, you should notify Hi-Fi Corner of your intention to do so within 14 days of the date of receipt.",
+      "faqtext": "You then have an additional 14 days to return the goods from this notification date (goods must be returned within 28 days). We will in such circumstances refund you the cost of your order, excluding postage or delivery cost. However, if goods are not returned 'as new' due to excessive handling on your part, or with components missing (including packing materials and manuals) we may make a reasonable deduction for this. Please do not send your product back to the manufacturer. We kindly ask that to make the refund process easier, that you include your receipt or proof of purchase and a cover letter detailing briefly why the item is being returned. We cannot refund the cost of delivery fees if there was an additional charge, only the cost of the goods themselves. We will process the refund when the item arrives with us. If you are shipping an item over £100, we would advise using a trackable shipping service or purchasing shipping insurance. We cannot guarantee that we will receive your returned item.",
+      "morefaqtext": "Please contact us before attempting to return your goods. For purchases bought in-store, you can also drop in and be refunded instantly."
     },
     {
-        "id": "faq7",
-        "faqexhanges": "EXCHANGES",
-        "text": "We can only replace items if they are defective or damaged. If you need to exchange the product for the same item due to a fault, please first send us an email at sales@hificorner.co.uk and once approved, send your item to:",
-        "faqtext": "Hi-Fi Corner, 2 Joppa Road, Mackenzie House, Portobello, Edinburgh, EH15 2EU.",
-        "morefaqtext": "Please also include the proof of purchase and a cover letter detailing the reason for exchange."
+      "id": "faq6",
+      "faqsale": "SALE ITEMS",
+      "text": "Only regularly priced items may be refunded, unfortunately clearance, special order and outlet items cannot be refunded unless they are found to be faulty on arrival. For more details about returning secondhand or sale items, please contact sales@hificorner.co.uk."
+    },
+    {
+      "id": "faq7",
+      "faqexhanges": "EXCHANGES",
+      "text": "We can only replace items if they are defective or damaged. If you need to exchange the product for the same item due to a fault, please first send us an email at sales@hificorner.co.uk and once approved, send your item to:",
+      "faqtext": "Hi-Fi Corner, 2 Joppa Road, Mackenzie House, Portobello, Edinburgh, EH15 2EU.",
+      "morefaqtext": "Please also include the proof of purchase and a cover letter detailing the reason for exchange."
     }
   ]
 }
