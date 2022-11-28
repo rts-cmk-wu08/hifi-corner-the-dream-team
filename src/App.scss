@@ -1,6 +1,29 @@
 /* ---- GLOBAL STYLES ---- */
 
 /* -- RESETS --*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, 
+*::before, 
+*::after{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img, 
+video{
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* -- TYPOGRAPHY -- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$primaryFont: 'open sans', 'san serif'; 
 
 
 /* -- COLOR VARIABLES -- */
@@ -10,6 +33,7 @@ $mediumGrey: #BBBFCA;
 $darkGrey: #495464; 
 //black
 $orange: #FF6900; 
+
 
 /* -- BREAKING POINTS --*/
 $breakpoints: (
@@ -23,6 +47,7 @@ $breakpoints: (
       @content; 
   }
 };
+
 
 //BREAKPOINT TESTS (mobilefirst) 
 .square{
