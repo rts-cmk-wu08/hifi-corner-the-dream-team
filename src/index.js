@@ -13,6 +13,7 @@ import CartPage from "./pages/CartPage";
 import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
+import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter(createRoutesFromElements (
     <Route path="/" element={<App />}>
@@ -26,6 +27,7 @@ export const router = createBrowserRouter(createRoutesFromElements (
      <Route path="/login" element={<Login />} />
      <Route path="/invoice" element={<InvoicePage />} />
      <Route path="/contactpage" element={<ContactPage />} />
+     <Route path='*' element={<NotFound />} />
     </Route>
 ))
 
