@@ -10,6 +10,9 @@ import MoreInfo from "./pages/MoreInfo";
 import AboutUs from "./pages/AboutUs";
 import ContactPage from "./pages/Contactpage";
 import CartPage from "./pages/CartPage";
+import PaymentPage from "./pages/PaymentPage";
+import Login from "./pages/Login";
+import InvoicePage from "./pages/InvoicePage";
 
 export const router = createBrowserRouter(createRoutesFromElements (
     <Route path="/" element={<App />}>
@@ -18,7 +21,11 @@ export const router = createBrowserRouter(createRoutesFromElements (
      <Route path="/productdetails" element={<ProductDetails />} />
      <Route path="/moreinfo" element={<MoreInfo />} />
      <Route path="/aboutus" element={<AboutUs />} />
-     <Route path="/CartPage" element={<CartPage />} />
+     <Route path="/cartpage" element={<CartPage />} />
+     <Route path="/paymentpage" element={<PaymentPage />} />
+     <Route path="/login" element={<Login />} />
+     <Route path="/invoice" element={<InvoicePage />} />
+     <Route path="/contactpage" element={<ContactPage />} />
     </Route>
 ))
 
