@@ -8,7 +8,7 @@ import Productpage from "./pages/ProductPage";
 import ProductDetails from "./pages/ProductDetails";
 import MoreInfo from "./pages/MoreInfo";
 import AboutUs from "./pages/AboutUs";
-import ContactPage from "./pages/Contactpage";
+import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 
 export const router = createBrowserRouter(createRoutesFromElements (
