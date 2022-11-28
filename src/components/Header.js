@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import "./header.scss"
 
 const Header = () => {
-    return ( 
-        <header>
-            <nav>
-            <li>Home</li> 
-            <Link to= {"/AboutUs"}>About us</Link> 
-            <Link to= {"/Contactpage"}>Contact us</Link> 
-            </nav>
-        </header>
-     );
+    return (
+        <header className="show">
+        <ul class="list-categories">
+          <li>Bed</li>
+          <li>Bed</li>
+          <li>Bed</li>
+          <li>Bed</li>
+          <li>Bed</li>
+          <li>Bed</li>
+        </ul>
+      </header>
+    );
 }
  
 export default Header;
