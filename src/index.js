@@ -2,8 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom";
-import Homepage from './pages/HomePage'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Homepage from "./pages/HomePage";
 import Productpage from "./pages/ProductPage";
 import ProductDetails from "./pages/ProductDetails";
 import MoreInfo from "./pages/MoreInfo";
@@ -15,8 +20,15 @@ import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
 import NotFound from "./pages/NotFound";
 
-export const router = createBrowserRouter(createRoutesFromElements (
-    <Route path="/" element={<App />}>
+export const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />} />
+      <Route index element={<Homepage />} />
+      <Route path="/productpage" element={<Productpage />} />
+      <Route path="/productdetails" element={<ProductDetails />} />
+      <Route path="/moreinfo" element={<MoreInfo />} />
+      <Route path="/aboutus" element={<AboutUs />} />
+      <Route path="/CartPage" element={<CartPage />} />
      <Route index element={<Homepage />} />
      <Route path="/productpage" element={<Productpage />} />
      <Route path="/productdetails" element={<ProductDetails />} />
@@ -29,9 +41,8 @@ export const router = createBrowserRouter(createRoutesFromElements (
      <Route path="/contactpage" element={<ContactPage />} />
      <Route path='*' element={<NotFound />} />
     </Route>
-))
-
-
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
