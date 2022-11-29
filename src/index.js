@@ -22,8 +22,8 @@ import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter(createRoutesFromElements (
   <Route path="/" element={<App />}>
-   <Route index element={<Homepage />} />
-   <Route path="/productpage" element={<Productpage />} />
+   <Route index element={<HomePage />} />
+   <Route path="/productpage" element={<ProductPage />} />
    <Route path="/productdetails" element={<ProductDetails />} />
    <Route path="/moreinfo" element={<MoreInfo />} />
    <Route path="/aboutus" element={<AboutUs />} />
