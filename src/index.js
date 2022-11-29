@@ -14,6 +14,7 @@ import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
 
 export const router = createBrowserRouter(createRoutesFromElements (
     <Route path="/" element={<App />}>
@@ -37,5 +38,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <Header />
   </React.StrictMode>
 );
