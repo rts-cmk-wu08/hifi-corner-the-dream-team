@@ -21,7 +21,7 @@ const Header = () => {
         <li>contact us</li>
         </nav>
 
-        {isHovering && <p className="browseCategories">Browse Categories</p>}
+        {isHovering && <p className="">Browse Categories</p>}
         {isHovering && <p className="shopList">CD Players</p>}
         {isHovering && <p className="shopList">DVD Players</p>}
         {isHovering && <p className="shopList">Preamps</p>}

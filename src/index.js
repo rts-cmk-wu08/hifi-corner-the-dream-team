@@ -19,7 +19,6 @@ import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
 import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
