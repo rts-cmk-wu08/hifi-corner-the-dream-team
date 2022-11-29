@@ -1,5 +1,5 @@
 /* ---- GLOBAL STYLES ---- */
-//@use './App' as gs; 
+//@use './globalStyles' as gs; 
 
 /* -- TYPOGRAPHY -- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -26,7 +26,6 @@ video{
   overflow: hidden;
 }
 
-
 /* -- COLOR VARIABLES -- */
 $offWhite: #F4F4F2; 
 $lightGray: #E8E8E8; 
@@ -35,6 +34,11 @@ $darkGrey: #495464;
 //black
 $orange: #FF6900; 
 
+.App{
+  width: 1200px;
+  background-color: $lightGray;
+  margin: 0 auto;
+}
 
 /* -- BREAKING POINTS --*/
 $breakpoints: (

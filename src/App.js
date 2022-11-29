@@ -1,12 +1,14 @@
 import "./App.scss";
 import ContactInfo from "./components/ContactInfo";
-import ProductImage from "./components/productImage";
+import Invoice from "./components/Invoice";
 import Header from "./components/Header"
+
 
 function App() {
   return (
-    <div className="App">
-      <ProductImage />
+
+      <Button destination="/homepage" text="test" />
+      <Invoice />
       <ContactInfo />
       <Header />
     </div>
