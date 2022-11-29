@@ -1,12 +1,7 @@
 import "./App.scss";
-import Price from "./components/price";
+import Button from "./components/Button";
 
 function App() {
-  return (
-    <div className="App">
-      <Price />
-    </div>
-  );
-}
-
-export default App;
+  return <div className="App">
+    <Button destination="/homepage" text="test"/>
+  </div>;

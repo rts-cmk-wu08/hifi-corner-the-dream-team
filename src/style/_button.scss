@@ -1,0 +1,7 @@
+@use './globalStyles' as gs; 
+
+.button {
+    background-color: gs.$orange; 
+    width: 8rem;
+    height: 2.1875rem;   
+}
