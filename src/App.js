@@ -3,5 +3,8 @@ import Button from "./components/Button";
 
 function App() {
   return <div className="App">
-    <Button destination="/homepage" text="test"/>
-  </div>;
+    <Button destination="/homepage" text=""/>
+  </div>
+}
+
+export default App;
