@@ -1,5 +1,4 @@
-import { useState } from "react";  
-import "./Header.scss";
+import { useState } from "react";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -16,10 +15,20 @@ const Header = () => {
     <header>
       <div>
         <nav>
-          <img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" />
-        <li className="shopElmNav" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>shop</li>
-        <li>about us</li>
-        <li>contact us</li>
+          <img
+            className="hif1cornerlogo"
+            src="hifi-corner-logo-01.svg"
+            alt="hifi corner logo"
+          />
+          <li
+            className="shopElmNav"
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          >
+            shop
+          </li>
+          <li>about us</li>
+          <li>contact us</li>
         </nav>
 
         {isHovering && <p className="browseCategories">Browse Categories</p>}

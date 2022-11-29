@@ -1,5 +1,7 @@
+@use './globalStyles' as gs; 
+
 .shopList{
-  background-color: gs$orange;
+  background-color: gs.$orange;
   width: 7.6rem;
   height: 22.5rem
 }
