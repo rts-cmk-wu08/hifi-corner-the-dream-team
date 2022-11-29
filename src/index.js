@@ -8,8 +8,8 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Homepage from "./pages/HomePage";
-import Productpage from "./pages/ProductPage";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
 import ProductDetails from "./pages/ProductDetails";
 import MoreInfo from "./pages/MoreInfo";
 import AboutUs from "./pages/AboutUs";
