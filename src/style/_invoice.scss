@@ -1,0 +1,30 @@
+@use './globalStyles' as gs; 
+
+.invoice{
+    width: 780px;
+    padding: 50px 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__billing-adr{
+        margin-bottom: 2rem;
+    }
+    &__seller{
+        justify-items: end;
+    }
+    &__p{
+        font-size: 12px;
+        text-transform: capitalize;
+        &--dark{
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+    &__h4{
+        color: gs.$darkGrey;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    
+}
