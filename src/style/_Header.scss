@@ -1,21 +1,31 @@
 @use './globalStyles' as gs; 
 
+header{
+  list-style-type: none;
+}
+
+.shopList{
+  padding: 0.4em;
+  color: orange;
+}
+
 .shopList{
   background-color: gs.$orange;
   width: 7.6rem;
   height: 22.5rem
 }
+
 .shopElmNav{
   width: 5rem;
 }
+
 nav{
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
 }
-.browseCategories{
-  padding-top: 1.5rem;
-}
+
 .hif1cornerlogo{
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
 }

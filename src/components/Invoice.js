@@ -41,7 +41,6 @@ const Invoice = () => {
             <td className="invoice__p">Dynamisk data</td>
           </tr>
         </table>
-      </div>
     </section>
   );
 };
