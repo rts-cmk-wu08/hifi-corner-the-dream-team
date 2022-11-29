@@ -5,6 +5,3 @@ function App() {
   return <div className="App">
     <Button destination="/homepage" text="test"/>
   </div>;
-}
-
-export default App;
