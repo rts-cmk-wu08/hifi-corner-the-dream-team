@@ -1,5 +1,7 @@
-@use '../App.scss' as gs; 
+@use './globalStyles' as gs; 
 
 .button {
-    color: gs.$orange;    
+    background-color: gs.$orange; 
+    width: 8rem;
+    height: 2.1875rem;   
 }
