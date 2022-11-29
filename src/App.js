@@ -1,14 +1,11 @@
 import "./App.scss";
-import ContactInfo from "./components/ContactInfo";
-import ProductImage from "./components/productImage";
-import Header from "./components/Header"
+import SearchBar from "./components/SearchBar";
+
 
 function App() {
   return (
     <div className="App">
-      <ProductImage />
-      <ContactInfo />
-      <Header />
+        <SearchBar />
     </div>
   );
 }
