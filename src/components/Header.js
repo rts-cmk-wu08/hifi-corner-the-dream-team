@@ -1,5 +1,4 @@
 import { useState } from "react";  
-import "./Header.scss";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);

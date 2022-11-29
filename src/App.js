@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Button destination="/homepage" text="test" />
       <ProductImage />
+      <ContactInfo />
     </div>
   );
 }
