@@ -1,0 +1,5 @@
+@use '../App.scss' as gs; 
+
+.button {
+    color: gs.$orange;    
+}
