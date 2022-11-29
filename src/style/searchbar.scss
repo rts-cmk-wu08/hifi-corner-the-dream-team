@@ -1,0 +1,13 @@
+@use './globalStyles' as gs; 
+
+.searchbar {
+    width: 12.56rem;
+    height: 2.4rem;
+}
+
+.search__icon {
+    position: relative;
+    right: 2rem;
+    font-size: 1.5rem;
+    top: 0.3rem;
+}
