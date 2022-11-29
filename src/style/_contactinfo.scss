@@ -1,0 +1,6 @@
+@use './globalStyles' as gs; 
+
+.form__box {
+    background-color: gs.$offWhite;
+    box-shadow: 0 0 5px black;
+}
