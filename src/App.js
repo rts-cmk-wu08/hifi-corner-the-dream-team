@@ -12,3 +12,10 @@ function App() {
 }
 
 export default App;
+
+  return <div className="App">
+    <Button destination="/homepage" text=""/>
+  </div>
+}
+
+export default App;
