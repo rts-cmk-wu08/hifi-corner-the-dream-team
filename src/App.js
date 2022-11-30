@@ -3,7 +3,7 @@ import CountItems from "./components/CountItems";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <CountItems />
     </div>
   );

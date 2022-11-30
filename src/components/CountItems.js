@@ -1,10 +1,17 @@
+import { useState } from "react";
+
 const CountItems = () => {
+    const [itemCount, setItemCount] = useState(0);
+
+    const handleIncrease = () => itemCount < 10 && setItemCount(itemCount + 1)
+    const handleDecrease = () => itemCount > 0 && setItemCount(itemCount - 1)
+
     return ( 
-        <>
-        <button className="minus">-</button>
-        <div className="count__box"></div>
-        <button className="plus">+</button>
-        </>
+        <div className="flex__countitems">
+        <button className="minus" onClick={handleDecrease}>-</button>
+        <div className="count__box">{itemCount}</div>
+        <button className="plus" onClick={handleIncrease}>+</button>
+        </div>
      );
 }
  
