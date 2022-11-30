@@ -6,16 +6,17 @@
     height: 2.1875rem;   
     border: none;
     border-radius: 0.2rem;
-
       &__link {
         font-family: gs.$primaryFont;
         color: gs.$offWhite;
         text-decoration: none;
         line-height: 2.1875rem;
       }  
-
+    &:hover{
+      box-shadow: gs.$btnShadow;
+    }
     }
 
-.button:hover {
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.268);
-  }
+// .button:hover {
+//     box-shadow: 0 0 7px rgba(0, 0, 0, 0.268);
+//   }
