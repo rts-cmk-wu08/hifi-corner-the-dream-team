@@ -6,7 +6,7 @@ import Video from "./components/Video";
 import HomePage from "./pages/HomePage";
 import CartCard from "./templates/cartCard";
 import ContactInfo from "./components/ContactInfo";
-import HomePage from "./pages/homepage";
+import Faq from "./templates/Faq";
 
 function App() {
   return (
@@ -16,12 +16,9 @@ function App() {
       <SearchBar />
       <Header />
       <Video />
+      <Faq />
       </div>
       )
       }
-
-    </div>
-  );
-}
 
 export default App;
