@@ -27,8 +27,6 @@ const Header = () => {
           >
             shop
           </li>
-          <li>about us</li>
-          <li>contact us</li>
         </nav>
         
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>

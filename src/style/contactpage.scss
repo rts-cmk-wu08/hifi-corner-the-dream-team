@@ -1,0 +1,11 @@
+@use './globalStyles' as gs; 
+
+.main {
+    background-color: gs.$offWhite;
+    height: 56.44rem;
+    width: 100%;
+}
+
+.contactinfo {
+    margin-top: 5rem;
+}
