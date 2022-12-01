@@ -1,20 +1,43 @@
 @use "./globalStyles" as gs;
 
 .homepage{
-    padding: 2rem 2.25rem ;
     &__h2{
-        text-transform: capitalize;
-        margin-bottom: 2rem;
+        text-transform: uppercase;
+        margin: 2rem 2rem;
+        &--white{
+            color: white;
+            margin-left: 0;
+        }
     }
    &__products{
+    padding: 0 2.25rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(1fr, 290px));
     gap: 2rem;
+    margin-bottom: 4.125rem;
     @include gs.breakpoint(tablet){
         grid-template-columns: repeat(2, 1fr);
     }
     @include gs.breakpoint(desktop){
          grid-template-columns: repeat(4, 1fr);
+    }
+   }
+   &__info{
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 15rem;
+    padding: 7.375rem 3.125rem;
+   }
+   &__p{
+    color: white;
+    font-size: 14px;
+    &--mb{
+        margin-bottom: 1rem;
+    }
+    &--black{
+        font-weight: 700;
     }
    }
 }
