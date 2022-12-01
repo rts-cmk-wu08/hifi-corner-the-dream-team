@@ -9,8 +9,9 @@ function App() {
       <HomePage />
       <SearchBar />
       <Header />
-    </div>
-  );
-}
+      </div>
+      )
+      }
+
 
 export default App;

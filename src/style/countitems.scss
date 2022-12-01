@@ -1,0 +1,30 @@
+@use './globalStyles' as gs; 
+
+.plus, .minus {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.25rem;
+    background: none;
+    border: none;
+}
+
+.plus {
+    margin-left: auto;
+    margin-right: 30rem;
+}
+
+.count__box {
+    width: 2.31rem;
+    height: 2.31rem;
+    background-color: gs.$offWhite;
+    margin-top: 3.2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    line-height: 2.31rem;
+    border-radius: 0.2rem;
+}
+
+.flex__countitems {
+    display: flex;
+}
