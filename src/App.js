@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./App.scss";
+import Productpage from "./pages/ProductPage";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
@@ -9,9 +10,11 @@ import CartCard from "./templates/cartCard";
 import ContactInfo from "./components/ContactInfo";
 import Faq from "./templates/Faq";
 
+
 function App() {
   return (
     <div className="app">
+      <Productpage />
       <Header />
       <Video />
       <Faq />
