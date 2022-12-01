@@ -25,23 +25,21 @@ const Invoice = () => {
         <p className="invoice__p">0131 556 7901 </p>
         <p className="invoice__p">sales@hificorner.co.uk</p>
       </div>
-      <div className="invoice__info">
-        <h3 className="invoice__h3">invoice</h3>
-        <table className="invoice__table">
-          <tr className="invoice__label">
-            <td className="invoice__p">Order number</td>
-            <td className="invoice__p">Date</td>
-            <td className="invoice__p">Shop</td>
-            <td className="invoice__p">Currency</td>
-          </tr>
-          <tr className="invoice__label">
-            <td className="invoice__p">Dynamisk data</td>
-            <td className="invoice__p">Dynamisk data</td>
-            <td className="invoice__p">Dynamisk data</td>
-            <td className="invoice__p">Dynamisk data</td>
-          </tr>
-        </table>
-        </div>
+      <h3 className="invoice__h3">invoice</h3>
+      <table className="invoice__table">
+        <tr className="invoice__label">
+          <td className="invoice__p">Order number</td>
+          <td className="invoice__p">Date</td>
+          <td className="invoice__p">Shop</td>
+          <td className="invoice__p">Currency</td>
+        </tr>
+        <tr className="invoice__label">
+          <td className="invoice__p">Dynamisk data</td>
+          <td className="invoice__p">Dynamisk data</td>
+          <td className="invoice__p">Dynamisk data</td>
+          <td className="invoice__p">Dynamisk data</td>
+        </tr>
+      </table>
     </section>
   );
 };

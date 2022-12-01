@@ -1,12 +1,17 @@
 import "./App.scss";
-import CountItems from "./components/CountItems";
+import SearchBar from "./components/SearchBar";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="">
-      <CountItems />
-    </div>
-  );
-}
+    <div className="App">
+      <HomePage />
+      <SearchBar />
+      <Header />
+      </div>
+      )
+      }
+
 
 export default App;
