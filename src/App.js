@@ -1,10 +1,13 @@
+import { Outlet } from "react-router-dom";
 import "./App.scss";
-import CountItems from "./components/CountItems";
+import Footer from "./templates/Footer";
 
 function App() {
   return (
     <div className="">
-      <CountItems />
+      <Footer />
+      
+      <Outlet />
     </div>
   );
 }
