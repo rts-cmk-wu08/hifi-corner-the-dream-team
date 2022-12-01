@@ -1,0 +1,17 @@
+@use './globalStyles' as gs; 
+
+.cart-card{
+    background: white;
+    box-shadow: gs.$cardShadow;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 0 4.25rem;
+    border-radius: 2px;
+    &__price{
+        color: gs.$mediumGrey;
+    }
+    &__img{
+        padding: 5% 0;
+    }
+}

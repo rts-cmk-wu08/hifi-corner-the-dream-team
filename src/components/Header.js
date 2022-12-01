@@ -1,7 +1,6 @@
 
 import { useState } from "react";  
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -21,8 +20,6 @@ const Header = () => {
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
           <Link to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
-      <div>
-        <nav>
           <img
             className="hif1cornerlogo"
             src="hifi-corner-logo-01.svg"
