@@ -1,13 +1,11 @@
 import "./App.scss";
 
-import ContactInfo from "./components/ContactInfo";
-import HomePage from "./pages/homepage";
+import Productpage from "./pages/ProductPage";
 
 function App() {
   return (
     <div className="app">
-      <ContactInfo />
-      <HomePage />
+      <Productpage />
     </div>
   );
 }
