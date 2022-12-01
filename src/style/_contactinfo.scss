@@ -1,9 +1,9 @@
 @use './globalStyles' as gs; 
-
-.form{
+.form__box {
     background-color: white;
-    box-shadow: 0 0 5px black;
-    max-width: 70.25rem;
+    box-shadow: gs.$cardShadow;
+    width: 70.25rem;
+
     height: 40.125rem;
     margin: 0 auto;
     padding: 5.125rem 3rem;

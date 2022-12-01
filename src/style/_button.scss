@@ -11,8 +11,12 @@
         text-decoration: none;
         font-size: 14px;
       }  
-      &:hover {
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.268);
-      }
+    &:hover{
+      box-shadow: gs.$btnShadow;
     }
+    }
+
+// .button:hover {
+//     box-shadow: 0 0 7px rgba(0, 0, 0, 0.268);
+//   }
 
