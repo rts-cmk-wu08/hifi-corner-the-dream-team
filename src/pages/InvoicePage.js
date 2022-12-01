@@ -1,7 +1,5 @@
 const InvoicePage = () => {
-    return ( 
-        <></>
-     );
-}
- 
+  return <></>;
+};
+
 export default InvoicePage;

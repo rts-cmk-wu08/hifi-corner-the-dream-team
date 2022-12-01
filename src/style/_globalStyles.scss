@@ -34,11 +34,10 @@ $darkGrey: #495464;
 //black
 $orange: #FF6900; 
 
-
 /* -- APP WRAPPER -- */
-.app{
-  width: 1200px;
-  background-color: $offWhite;
+.App{
+  max-width: 1200px;
+  background-color: $lightGray;
   margin: 0 auto;
 }
 
