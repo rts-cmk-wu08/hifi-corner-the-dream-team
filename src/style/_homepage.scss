@@ -1,0 +1,20 @@
+@use "./globalStyles" as gs;
+
+.homepage{
+    padding: 2rem 2.25rem ;
+    &__h2{
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+   &__products{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(1fr, 290px));
+    gap: 2rem;
+    @include gs.breakpoint(tablet){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include gs.breakpoint(desktop){
+         grid-template-columns: repeat(4, 1fr);
+    }
+   }
+}

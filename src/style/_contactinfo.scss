@@ -1,37 +1,34 @@
 @use './globalStyles' as gs; 
 
-.form__box {
-    background-color: gs.$offWhite;
+.form{
+    background-color: white;
     box-shadow: 0 0 5px black;
-    width: 70.25rem;
+    max-width: 70.25rem;
     height: 40.125rem;
     margin: 0 auto;
-}
-
-.form {
-    padding-top: 2rem;
-}
-
-.form__group, .message__input, .form__heading{
-    height: 5rem;
-    margin-left: 2rem;
-}
-
-.fullname__input, .email__input, .subject__input {
-    width: 46.6875rem;
-    height: 2.375rem;
-}
-
-.message__input {
-    width: 64.3125rem;
-    height: 9.4rem;
-}
-
-Button {
-    margin-left: 58.3rem;
-    margin-top: 3rem;
-}
-
-.orange__star {
-    color: gs.$orange;
+    padding: 5.125rem 3rem;
+    &__group{
+        display: grid;
+        &--short{
+            padding-right: 330px;
+        }
+    }
+    &__input{
+        background-color: gs.$lightGray;
+        border: none;
+        border-radius: 2px;
+        line-height: 2rem;
+    }
+    &__heading{
+        line-height: 39px;
+        font-size: 18px;
+    }
+    &__btn{
+        margin: 3.5rem 0 5.125rem 0;
+        display: grid;
+        justify-items: end;
+    }
+    &__star{
+        color: gs.$orange;
+    }
 }
