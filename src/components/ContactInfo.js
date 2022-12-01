@@ -1,31 +1,55 @@
 import Button from "./Button";
 
 const ContactInfo = () => {
-    return ( 
-        <div className="form__box">
-        <form method="get" name="contact" id="contact">
-            <div className="formgroup">
-                <label for="fullname" className="fullname__heading">Full Name <span>*</span></label>
-                <input type="text" className="Fullname__input" name="fullname" id="fullname"/>
-            </div>
-            <div className="formgroup">
-                <label for="email" className="email__heading">Email <span>*</span></label>
-                <input type="text" className="email__input" name="email" id="email"/>
-            </div>
-            <div className="formgroup">
-                <label for="subject" className="subject__heading">Subject <span>*</span></label>
-                <input type="text" className="subject__input" name="subject" id="subject"/>
-            </div>
-            <div className="formgroup">
-                <label for="message" className="message__heading">Message <span>*</span></label>
-                <input type="text" className="Fullname__input" name="fullname" id="fullname"/>
-            </div>
-            <div className="formgroup">
-                <Button type="submit" className="submit__button" />
-            </div>
-        </form>
+  return (
+    <div className="form">
+      <form method="get" name="contact" id="contact" className="form__form">
+        <div className="form__group form__group--short">
+          <label for="fullname" className="form__heading">
+            Full Name <span className="form__star">*</span>
+          </label>
+          <input
+            type="text"
+            className="form__input"
+            name="fullname"
+            id="fullname"
+          />
         </div>
-     );
-}
- 
+        <div className="form__group form__group--short">
+          <label for="email" className="form__heading">
+            Email <span className="form__star">*</span>
+          </label>
+          <input type="text" className="form__input" name="email" id="email" />
+        </div>
+        <div className="form__group form__group--short">
+          <label for="subject" className="form__heading">
+            Subject <span className="form__star">*</span>
+          </label>
+          <input
+            type="text"
+            className="form__input"
+            name="subject"
+            id="subject"
+          />
+        </div>
+        <div className="form__group">
+          <label for="message" className="form__heading">
+            Message <span className="form__star">*</span>
+          </label>
+          <textarea
+            className="form__input"
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div className="form__btn">
+          <Button destination="/homepage" text="Submit" />
+        </div>
+      </form>
+    </div>
+  );
+};
+
 export default ContactInfo;

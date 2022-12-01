@@ -1,5 +1,5 @@
 /* ---- GLOBAL STYLES ---- */
-//@use './App' as gs; 
+//@use './globalStyles' as gs; 
 
 /* -- TYPOGRAPHY -- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -26,7 +26,6 @@ video{
   overflow: hidden;
 }
 
-
 /* -- COLOR VARIABLES -- */
 $offWhite: #F4F4F2; 
 $lightGray: #E8E8E8; 
@@ -34,6 +33,17 @@ $mediumGrey: #BBBFCA;
 $darkGrey: #495464; 
 //black
 $orange: #FF6900; 
+
+/* -- APP WRAPPER -- */
+.App{
+  max-width: 1200px;
+  background-color: $lightGray;
+  margin: 0 auto;
+}
+
+/* -- DROPSHADOW VARIABLE -- */
+$btnShadow: rgba(0, 0, 0, 0.25) 2.5px 2.5px 2.6px; 
+$cardShadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
 
 
 /* -- BREAKING POINTS --*/

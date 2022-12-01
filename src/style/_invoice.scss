@@ -1,0 +1,94 @@
+@use './globalStyles' as gs; 
+
+.invoice{
+    border-collapse: collapse;
+    width: 780px;
+    height: 983px;
+    padding: 50px 45px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    box-shadow: gs.$cardShadow;
+    &__billing-adr{
+        margin-bottom: 2rem;
+    }
+    &__seller{
+       text-align: end;
+    }
+    &__p{
+       font-size: 12px;
+        text-transform: capitalize;
+        line-height: 1.2;
+        &--dark{
+            font-weight: 700;
+        }
+        &--light{
+            font-weight: 300;
+            line-height: 1;
+        }
+        &--right{
+            text-align: right;
+        }
+        &--center{
+            text-align: center;
+        }
+    }
+    &__h4{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        &--grey{
+            color: gs.$darkGrey;
+        }
+        &--right{
+            text-align: right;
+        }
+    }
+    &__table-head{          
+        border-bottom: 2px solid gs.$mediumGrey;
+    }
+    &__h3{
+        grid-column: 1 / span 2;
+        color: gs.$darkGrey;
+        text-transform: capitalize;
+        font-size: 26px;
+        font-weight: 550;
+        border-bottom: 2px solid gs.$mediumGrey;
+        margin-bottom: 1rem;
+    }
+    &__info{
+        grid-area: 2 / 2 / 2 / 3;
+    }
+    &__label{
+        grid-area: 2 / 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 3.5rem;
+    }
+     &__items{
+        margin-bottom: 3.5rem;
+        width: 100%;
+        grid-column: 1 / span 2;
+    }
+    &__total{
+        grid-column: 2;
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        &--grey-bg{
+            background-color: gs.$darkGrey;
+            color: white;
+            margin-top: 2rem;
+            padding: 0.5rem;
+        }
+    }
+    &__bottom{
+        grid-column: 1 / span 2;
+        font-size: 12px;
+        align-self: end;
+        text-align: center;
+    }
+}

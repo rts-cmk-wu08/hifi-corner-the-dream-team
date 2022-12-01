@@ -1,0 +1,15 @@
+@use "./globalStyles" as gs; 
+
+.product-card{
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    //box-shadow: gs.$;
+    height: 339px;
+    border-radius: 3px;
+    &__h3{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}

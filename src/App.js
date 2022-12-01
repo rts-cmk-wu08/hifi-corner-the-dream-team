@@ -1,17 +1,23 @@
 import "./App.scss";
-import Button from "./components/Button";
+
 import ContactInfo from "./components/ContactInfo";
-import ProductImage from "./components/productImage";
-import Header from "./components/Header"
+import Invoice from "./components/Invoice";
+import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Button destination="/homepage" text="test" />
-      <ProductImage />
+    <div className="app">
+      <Invoice />
+      <ContactInfo />
+      <HomePage />
+      <SearchBar />
       <Header />
-    </div>
-  );
-}
+      </div>
+      )
+      }
+
 
 export default App;
