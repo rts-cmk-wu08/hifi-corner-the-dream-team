@@ -1,12 +1,11 @@
 @use './globalStyles' as gs; 
 .form{
     background-color: white;
-    box-shadow: gs.$cardShadow;
-    width: 70.25rem;
-
+    max-width: 70.25rem;
     height: 40.125rem;
     margin: 0 auto;
     padding: 5.125rem 3rem;
+    box-shadow: gs.$cardShadow;
     &__group{
         display: grid;
         &--short{
@@ -18,6 +17,7 @@
         border: none;
         border-radius: 2px;
         line-height: 2rem;
+        box-shadow: gs.$btnShadow;
     }
     &__heading{
         line-height: 39px;
