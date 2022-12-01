@@ -1,0 +1,22 @@
+@use './globalStyles' as gs; 
+
+.product-page{
+    padding: 2.25rem;
+    &__2grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    }
+    &__3grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.75rem;
+        row-gap: 1.75rem;
+    }
+    &__h2{
+        text-transform: uppercase;
+        font-size: 48px;
+        color: gs.$darkGrey;
+        margin-bottom: 3.25rem;
+        font-weight: 500;
+    }
+}
