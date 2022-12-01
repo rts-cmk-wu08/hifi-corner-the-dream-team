@@ -1,31 +1,33 @@
 @use './globalStyles' as gs; 
 
 header{
-  list-style-type: none;
+  background-color: black;
+  height: 6rem;
+  width: 100%;
 }
-
+.navbar__onLine{
+  display: inline;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  color: white;
+  text-transform: uppercase;
+}
 .shopList{
   padding: 0.4em;
-  color: orange;
+  color: gs.$orange;
 }
-
-.shopList{
-  background-color: gs.$orange;
-  width: 7.6rem;
-  height: 22.5rem
-}
-
-.shopElmNav{
-  width: 5rem;
-}
-
-nav{
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-}
-
 .hif1cornerlogo{
-  width: 4rem;
-  height: 4rem;
+  position: relative;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+.headerNavbar{
+  position: relative;
+  left: 2rem;
+}
+.div__shopList{
+  padding-top: 3rem;
+  position: relative;
+  left: 6rem;
 }

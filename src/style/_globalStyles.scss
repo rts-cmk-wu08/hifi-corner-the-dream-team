@@ -34,11 +34,17 @@ $darkGrey: #495464;
 //black
 $orange: #FF6900; 
 
-.App{
-  width: 1200px;
+/* -- APP WRAPPER -- */
+.app{
+  max-width: 1200px;
   background-color: $lightGray;
   margin: 0 auto;
 }
+
+/* -- DROPSHADOW VARIABLE -- */
+$btnShadow: rgba(0, 0, 0, 0.25) 2.5px 2.5px 2.6px; 
+$cardShadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
+
 
 /* -- BREAKING POINTS --*/
 $breakpoints: (
