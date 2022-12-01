@@ -1,3 +1,4 @@
+import Video from "../components/Video";
 import ProductCard from "../templates/productCard";
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        <Video />
       </section>
       <section className="homepage__info"></section>
     </article>
