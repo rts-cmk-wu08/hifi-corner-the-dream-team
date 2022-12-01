@@ -1,4 +1,4 @@
-import { IoSearch } from "react-icons/io5";
+// import { IoSearch } from "react-icons/io5";
 
 const SearchBar = () => {
   return (
@@ -10,7 +10,7 @@ const SearchBar = () => {
         className="searchbar"
         placeholder="Search product..."
       />
-      <IoSearch className="searchbar__icon" />
+      {/* <IoSearch className="searchbar__icon" /> */}
     </div>
   );
 };
