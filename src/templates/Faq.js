@@ -5,7 +5,7 @@ const Faq = () => {
 
         <section>
             <h3 className="faq__h3headline">faq</h3>
-            <h5 className="faq__h5Split">Here at Hi-Fi Corner, our trained product specialists aim to provide the right product for you. We take great care with all of our orders to ensure you are fully happy with the product.</h5>
+            <p className="faq__h5Split">Here at Hi-Fi Corner, our trained product specialists aim to provide the right product for you. We take great care with all of our orders to ensure you are fully happy with the product.</p>
             <p>We aim to resolve any problems to your satisfaction.</p>
                 Please contact us directly, if, for any reason, you have an issue with your order, your product or any other service provided. OUR GUARANTEE
                 All items excluding ex-display and secondhand goods are covered by at least 12 months warranty; this is detailed on your receipt. Any secondhand or ex-display product is covered by at least 3 months warranty as noted in the original listing.
