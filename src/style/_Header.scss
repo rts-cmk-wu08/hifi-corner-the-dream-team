@@ -12,6 +12,7 @@ header{
   color: white;
   text-transform: uppercase;
 }
+
 .shopList{
   padding: 0.4em;
   color: gs.$orange;
@@ -30,4 +31,17 @@ header{
   padding-top: 3rem;
   position: relative;
   left: 6rem;
+}
+
+.shopElmNav {
+  list-style-type: none;
+}
+
+
+.text__decoration {
+  text-decoration: none;
+}
+
+.text__decoration:hover {
+  font-weight: bold;
 }
