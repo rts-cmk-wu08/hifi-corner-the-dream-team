@@ -5,10 +5,6 @@ import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import Video from "./components/Video";
-import HomePage from "./pages/HomePage";
-import CartCard from "./templates/cartCard";
-import ContactInfo from "./components/ContactInfo";
-import Faq from "./templates/Faq";
 
 
 function App() {
@@ -17,7 +13,6 @@ function App() {
       <Productpage />
       <Header />
       <Video />
-      <Faq />
       <Footer />
       </div>
   );
