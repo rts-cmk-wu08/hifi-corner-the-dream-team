@@ -50,7 +50,7 @@ const Header = () => {
         <Link to= {"/PowerAmplifiers"}> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
         <Link to= {"/TubeAmplifiers"}> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
         </div>
-    </header>
+  
   );
 };
 
