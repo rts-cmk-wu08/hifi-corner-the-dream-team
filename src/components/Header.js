@@ -19,6 +19,15 @@ const Header = () => {
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link to={"/AboutUs"} className="text__decoration"><li className="navbar__onLine">about us</li></Link>
           <Link to={"/ContactUs"} className="text__decoration"><li className="navbar__onLine">contact us</li></Link>
+          <Link to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
+          <Link to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
+        </nav>
+          <img
+            className="hif1cornerlogo"
+            src="hifi-corner-logo-01.svg"
+            alt="hifi corner logo"
+          />
+
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
@@ -28,6 +37,9 @@ const Header = () => {
           </li>
         </nav>
         
+          <li>about us</li>
+          <li>contact us</li>
+          
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
         <Link to= {"/CDPlayers"} className="text__decoration"> {isHovering && <p className="shopList">CD Players</p>} </Link>
@@ -39,7 +51,7 @@ const Header = () => {
         <Link to= {"/PowerAmplifiers"} className="text__decoration"> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
         <Link to= {"/TubeAmplifiers"} className="text__decoration"> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
         </div>
-    </header>
+  
   );
 };
 
