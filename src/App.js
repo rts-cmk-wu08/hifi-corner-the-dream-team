@@ -1,22 +1,23 @@
+import { Outlet } from "react-router-dom";
 import "./App.scss";
 
 import ContactInfo from "./components/ContactInfo";
 import Invoice from "./components/Invoice";
-import SearchBar from "./components/SearchBar";
+import Productpage from "./pages/ProductPage";
+import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import HomePage from "./pages/HomePage";
+import SearchBar from "./components/SearchBar";
+import Video from "./components/Video";
 
 function App() {
   return (
     <div className="app">
-      <Invoice />
-      <ContactInfo />
-      <HomePage />
-      <SearchBar />
+      <Productpage />
       <Header />
+      <Video />
+      <Footer />
       </div>
-      )
-      }
-
+  );
+}
 
 export default App;
