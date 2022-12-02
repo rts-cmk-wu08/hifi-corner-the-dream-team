@@ -2,10 +2,21 @@
 
 .main {
     background-color: gs.$offWhite;
-    height: 56.44rem;
+    height: 60rem;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contactpage__heading {
+    grid-row: 1/1;
 }
 
 .contactinfo {
-    margin-top: 5rem;
+    grid-row: 2/2;
+}
+
+.contactpage__heading, .contactinfo {
+    grid-column: 1/1;
 }
