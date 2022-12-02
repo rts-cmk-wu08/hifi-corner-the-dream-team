@@ -3,7 +3,7 @@
 .main {
     background-color: gs.$offWhite;
     height: 60rem;
-    width: 100%;
+    width: 1200px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -11,6 +11,14 @@
 
 .contactpage__heading {
     grid-row: 1/1;
+    font-size: 3.4rem;
+    font-weight: 300;
+    color: gs.$darkGrey;
+    padding-left: 2.5rem;
+}
+
+.contactpage__heading, .heading__under__form {
+    align-self: center;
 }
 
 .contactinfo {
@@ -19,4 +27,12 @@
 
 .contactpage__heading, .contactinfo {
     grid-column: 1/1;
+}
+
+.heading__under__form {
+    justify-self: center;
+}
+
+.orange__text {
+    color: gs.$orange;
 }

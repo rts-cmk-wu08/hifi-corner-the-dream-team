@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <Header />
       <ContactPage/>
-      <Footer />
+      <Footer className="footer" />
 
       </div>
 
