@@ -1,0 +1,17 @@
+@use './globalStyles' as gs; 
+
+.divWrapper__grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 0) 1fr;
+    grid-template-rows: repeat(2, 1fr) repeat(3, 0);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.h6__subtitleAboutus{
+    color: gs.$orange;
+}
+.history__aboutus{
+    text-transform: uppercase;
+    color: grey;
+}
