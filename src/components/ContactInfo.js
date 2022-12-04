@@ -5,7 +5,7 @@ const ContactInfo = () => {
     <div className="form">
       <form method="get" name="contact" id="contact" className="form__form">
         <div className="form__group form__group--short">
-          <label for="fullname" className="form__heading">
+          <label htmlFor="fullname" className="form__heading">
             Full Name <span className="form__star">*</span>
           </label>
           <input
@@ -16,13 +16,13 @@ const ContactInfo = () => {
           />
         </div>
         <div className="form__group form__group--short">
-          <label for="email" className="form__heading">
+          <label htmlFor="email" className="form__heading">
             Email <span className="form__star">*</span>
           </label>
           <input type="text" className="form__input" name="email" id="email" />
         </div>
         <div className="form__group form__group--short">
-          <label for="subject" className="form__heading">
+          <label htmlFor="subject" className="form__heading">
             Subject <span className="form__star">*</span>
           </label>
           <input
@@ -33,7 +33,7 @@ const ContactInfo = () => {
           />
         </div>
         <div className="form__group">
-          <label for="message" className="form__heading">
+          <label htmlFor="message" className="form__heading">
             Message <span className="form__star">*</span>
           </label>
           <textarea
