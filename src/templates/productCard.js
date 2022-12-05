@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import Price from "../components/price";
 import ProductImage from "../components/productImage";
+//import { GoSettings } from "react-icons/fa";
 
 const ProductCard = (props) => {
   return (
