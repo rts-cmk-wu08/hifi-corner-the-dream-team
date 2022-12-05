@@ -1,14 +1,13 @@
 import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./templates/Footer";
+import BurgerMenu from "./templates/BurgerMenu";
+
 
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Outlet />
-      <Footer />
+    <BurgerMenu />
+    </div>
   );
 }
 
