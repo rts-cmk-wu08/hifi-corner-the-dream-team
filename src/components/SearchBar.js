@@ -1,24 +1,48 @@
-import { IoSearch } from "react-icons/io5"
-import List from "../components/List"
+import { useState } from "react";
+import "./styles.css";
+var data = require("./MOCK_DATA.json");
 
-function App() {
-    const [inputText, setInputText] = useState("");
-    let inputHandler = (e) => {
-      //convert input text to lower case
-      var lowerCase = e.target.value.toLowerCase();
-      setInputText(lowerCase);
-    };
+export default function Search() {
+  const [value, setValue] = useState("");
 
-const SearchBar = () => {
-    return ( 
-        <div className="search__wrapper">
-            <div className="search">
-            <input type="search" name="search" id="search outlined-basic" className="searchbar" placeholder="Search product..."  variant="outlined" fullwidth label="Search"/>
-            <List input={inputText} />
-            <IoSearch className="search__icon"/>
-            </div>
+  const onChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  const onSearch = (searchTerm) => {
+    setValue(searchTerm);
+
+    console.log("search ", searchTerm);
+  };
+
+  return (
+    <div className="App">
+      <h1>Search</h1>
+    
+      <div className="search-container">
+        <div className="search-inner">
+          <input type="text" value={value} onChange={onChange} />
+          <button onClick={() => onSearch(value)}> Search </button>
         </div>
-    );
+        <div className="dropdown">
+          {data
+            .filter((item) => {
+              const searchTerm = value.toLowerCase();
+              const searchProducts = item.search_products.toLowerCase();
+              
+              return (
+                searchTerm &&
+                searchProducts.startsWith(searchTerm) &&
+                searchProducts !== searchTerm
+              );
+            })
+            .slice(0, 10)
+            .map((item) => (
+              
+           <div onClick={() => onSearch(item.search_products)} className="dropdown-row" key={item.search_products} > {item.search_products} </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  );
 }
- 
-export default SearchBar;
