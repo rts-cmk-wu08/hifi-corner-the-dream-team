@@ -1,5 +1,7 @@
 import { useState } from "react";  
 import { Link } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs"
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -19,6 +21,8 @@ const Header = () => {
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link className="text__decoration" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
           <Link className="text__decoration" to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
+          <SearchBar className="searchbar" />
+          <BsFillPersonFill className="profile__icon" />
         </nav>
         <li
             className="shopElmNav"

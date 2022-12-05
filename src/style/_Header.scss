@@ -9,7 +9,6 @@ header{
   display: inline;
   padding-left: 2rem;
   font-size: 1.4rem;
-  color: white;
   text-transform: uppercase;
 }
 
@@ -24,9 +23,28 @@ header{
   height: 3rem;
 }
 .headerNavbar{
-  position: relative;
   left: 2rem;
 }
+
+.headerNavbar, .searchbar, .profile__icon {
+  position: relative;
+}
+
+.searchbar {
+  left: 48rem;
+  bottom: 2rem;
+}
+
+.profile__icon, .navbar__onLine {
+  color: white;
+}
+
+.profile__icon {
+  left: 63rem;
+  bottom: 4rem;
+  font-size: 1.8rem;
+}
+
 .div__shopList{
   padding-top: 3rem;
   position: relative;
