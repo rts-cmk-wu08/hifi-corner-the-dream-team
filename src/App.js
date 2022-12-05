@@ -5,7 +5,7 @@ import BurgerMenu from "./templates/BurgerMenu";
 
 function App() {
   return (
-    <div className="app">
+    <div className="">
     <BurgerMenu />
     </div>
   );
