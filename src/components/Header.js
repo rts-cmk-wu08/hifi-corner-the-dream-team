@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useContext } from "react";
-import { DestinationContext } from "../contexts/DestinationContext";
+import { CartContext } from "../contexts/CartContext";
+
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -12,9 +13,6 @@ const Header = () => {
   const handleMouseOut = () => {
     setIsHovering(false);
   };
-
-
-  const { bookings } = useContext(DestinationContext)
 
   return (
     <header>
@@ -35,7 +33,6 @@ const Header = () => {
           <li>about us</li>
           <li>contact us</li>
         </nav>
-        <p>No. of bookings: {bookings}</p>
 
         {isHovering && <p className="">Browse Categories</p>}
         {isHovering && <p className="shopList">CD Players</p>}
