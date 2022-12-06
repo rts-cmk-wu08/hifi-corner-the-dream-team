@@ -53,3 +53,14 @@ input {
 .input__search{
   padding-left: 0.25rem;
 }
+
+.searchbar {
+    width: 12.56rem;
+    height: 2.4rem;
+    &__icon{
+        position: relative;
+        right: 2rem;
+        font-size: 1.5rem;
+        top: 0.3rem;
+    }
+}

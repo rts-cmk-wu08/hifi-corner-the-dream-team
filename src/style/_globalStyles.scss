@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 $primaryFont: 'open sans', 'san serif'; 
 
+
+/* ------------------------------------------------------------- */
 /* -- RESETS --*/
 html {
   box-sizing: border-box;
@@ -21,11 +23,23 @@ html {
 }
 
 img, 
+video, 
+svg, 
 video{
   width: 100%;
   overflow: hidden;
 }
 
+input, 
+textarea,
+button, 
+select{
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ------------------------------------------------------------- */
 /* -- COLOR VARIABLES -- */
 $offWhite: #F4F4F2; 
 $lightGray: #E8E8E8; 
@@ -34,12 +48,51 @@ $darkGrey: #495464;
 //black
 $orange: #FF6900; 
 
-.App{
-  width: 1200px;
+
+/* ------------------------------------------------------------- */
+/* -- TYPOGRAPHY -- */
+h1,
+h2,
+h3,
+h4{
+
+}
+
+h1{
+  font-size: 48px;
+  color: $darkGrey;
+  margin-bottom: 3.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 26px;
+  color: $darkGrey;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+/* ------------------------------------------------------------- */
+/* -- APP WRAPPER -- */
+.app{
+  width: 100%;
   background-color: $lightGray;
   margin: 0 auto;
 }
 
+.outlet{
+  max-width: 1200px;
+}
+
+/* -- DROPSHADOW VARIABLE -- */
+$btnShadow: rgba(0, 0, 0, 0.25) 2.5px 2.5px 2.6px; 
+$cardShadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
+
+
+/* ------------------------------------------------------------- */
 /* -- BREAKING POINTS --*/
 $breakpoints: (
     'tablet': 600px, 
@@ -54,6 +107,7 @@ $breakpoints: (
 };
 
 
+/* ------------------------------------------------------------- */
 //BREAKPOINT TESTS (mobilefirst) 
 .square{
   width: 300px;
@@ -67,6 +121,8 @@ $breakpoints: (
   }
 }
 
+
+/* ------------------------------------------------------------- */
 /* -- GRIDS -- */
 .three-col-grid{
   display: grid;
