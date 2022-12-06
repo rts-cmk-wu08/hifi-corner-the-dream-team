@@ -1,40 +1,55 @@
 @use './globalStyles' as gs; 
 
 .App {
-    font-family: sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .search-container {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dropdown {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-  }
-  
-  .dropdown:empty {
-    border: none;
-  }
-  
-  .dropdown-row {
-    cursor: pointer;
-    text-align: start;
-    margin: 2px 0;
-  }
-  
-  input {
-    width: 220px;
-  }
-  
-  .search-inner {
-    display: flex;
-  }
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.dropdown-row {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+  text-decoration: none;
+  background-color: white;
+}
+
+input {
+  width: 14rem;
+  height: 2rem;
+  // border: none;
+}
+
+.search-inner {
+  font-size: 1.4rem;
+  position:relative;
+}
+.fontuser{
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  top:50%;
+  left: 12rem;
+  transform: translateY(-50%);
+}
+.input__search{
+  padding-left: 0.25rem;
+}
