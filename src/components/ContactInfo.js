@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { useForm } from "react-hook-form";
+import { useForm } from "react";
 
 const ContactInfo = () => {
   const { register, handleSubmit, errors } = useForm();
