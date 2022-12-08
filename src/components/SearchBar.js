@@ -1,6 +1,4 @@
-
 import { useState } from "react";
-import "./SearchBar";
 import {BrowserRouter as Router, Link} from "react-router-dom"
 import { FaSearch } from 'react-icons/fa';
 
