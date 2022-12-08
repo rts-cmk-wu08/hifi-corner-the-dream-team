@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "./SearchBar";
 import {BrowserRouter as Router, Link} from "react-router-dom"
@@ -53,3 +54,23 @@ export default function Search() {
     </div>
   );
 }
+
+// import { IoSearch } from "react-icons/io5";
+
+const SearchBar = () => {
+  return (
+    <div>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        className="searchbar"
+        placeholder="Search product..."
+      />
+      {/* <IoSearch className="searchbar__icon" /> */}
+    </div>
+  );
+};
+
+export default SearchBar;
+
