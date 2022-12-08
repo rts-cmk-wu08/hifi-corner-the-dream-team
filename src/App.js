@@ -9,11 +9,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Video />
-      <HomePage />
       <Outlet />
       <Footer />
-
       </div>
   );
 }
