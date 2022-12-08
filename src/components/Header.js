@@ -24,10 +24,7 @@ const Header = () => {
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
-            shop
           </li>
-          <li>about us</li>
-          <li>contact us</li>
         </nav>
         
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
