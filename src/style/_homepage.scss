@@ -1,6 +1,8 @@
 @use "./globalStyles" as gs;
 
 .homepage{
+    max-width: 1200px;
+    margin: 0 auto;
     &__h2{
         text-transform: uppercase;
         margin: 2rem 2rem;
@@ -29,6 +31,7 @@
     grid-template-columns: 2fr 1fr;
     column-gap: 15rem;
     padding: 7.375rem 3.125rem;
+    margin-bottom: 7.5rem;
    }
    &__p{
     color: white;

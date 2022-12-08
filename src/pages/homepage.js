@@ -1,13 +1,13 @@
 import ProductCard from "../templates/productCard";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import ProductDetails from "./ProductDetails";
 
 const HomePage = () => {
   return (
     <article className="homepage">
       <h2 className="homepage__h2">popular products</h2>
       <section className="homepage__products">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
         <ProductCard />
       </section>
       <section className="homepage__info">
