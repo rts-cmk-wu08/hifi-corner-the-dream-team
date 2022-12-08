@@ -1,5 +1,5 @@
-
 import { useState } from "react";
+import Search from "./SearchBar";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -30,6 +30,7 @@ const Header = () => {
           </li>
           <li>about us</li>
           <li>contact us</li>
+          <Search />
         </nav>
 
         {isHovering && <p className="">Browse Categories</p>}
