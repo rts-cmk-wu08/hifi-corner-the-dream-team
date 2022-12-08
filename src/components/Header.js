@@ -25,18 +25,13 @@ const Header = () => {
           <BsFillPersonFill className="profile__icon" />
         </nav>
         <li
-          <Link to={"/AboutUs"} className="text__decoration"><li className="navbar__onLine">about us</li></Link>
-          <Link to={"/ContactUs"} className="text__decoration"><li className="navbar__onLine">contact us</li></Link>
-          <Link to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
-          <Link to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
-
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
           </li>
-        
+
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
         <Link className="text__decoration" to= {"/CDPlayers"}> {isHovering && <p className="shopList">CD Players</p>} </Link>
@@ -48,7 +43,8 @@ const Header = () => {
         <Link className="text__decoration" to= {"/PowerAmplifiers"}> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
         <Link className="text__decoration" to= {"/TubeAmplifiers"}> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
         </div>
-  </header>
+    </header>
+
   );
 };
 
