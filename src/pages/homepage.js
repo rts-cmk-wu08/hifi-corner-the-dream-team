@@ -1,7 +1,4 @@
 import ProductCard from "../templates/productCard";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import ProductDetails from "./ProductDetails";
 
 const HomePage = () => {
   return (

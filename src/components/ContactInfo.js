@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { useForm } from "react-hook-form";
 
-const ContactInfo = () => {
+const ContactForm = () => {
   const { register, handleSubmit, errors } = useForm();
 
   return (
@@ -72,4 +72,4 @@ const ContactInfo = () => {
   );
 };
 
-export default ContactInfo;
+export default ContactForm;
