@@ -37,18 +37,6 @@ const Header = () => {
         <Link to={"/ContactUs"} className="text__decoration">
           <li className="navbar__onLine">contact us</li>
         </Link>
-        <Link to={"/AboutUs"}>
-          <li className="navbar__onLine">about us</li>
-        </Link>
-        <Link to={"/ContactUs"}>
-          <li className="navbar__onLine">contact us</li>
-        </Link>
-        <img
-          className="hif1cornerlogo"
-          src="hifi-corner-logo-01.svg"
-          alt="hifi corner logo"
-        />
-
         <li
           className="shopElmNav"
           onMouseOver={handleMouseOver}
