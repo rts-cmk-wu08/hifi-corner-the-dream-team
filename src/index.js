@@ -1,4 +1,5 @@
 import React from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
@@ -19,6 +20,7 @@ import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
 import NotFound from "./pages/NotFound";
+import Search from "./components/SearchBar";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,5 +44,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <StrictMode>
+    </StrictMode>
   </React.StrictMode>
 );

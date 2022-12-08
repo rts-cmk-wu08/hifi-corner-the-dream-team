@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -55,9 +57,6 @@ const Header = () => {
           shop
         </li>
       </nav>
-
-      <li>about us</li>
-      <li>contact us</li>
 
       <div
         className="div__shopList"
