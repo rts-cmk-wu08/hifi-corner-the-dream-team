@@ -19,13 +19,13 @@ const Header = () => {
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link to={"/AboutUs"} className="text__decoration"><li className="navbar__onLine">about us</li></Link>
           <Link to={"/ContactUs"} className="text__decoration"><li className="navbar__onLine">contact us</li></Link>
+          </nav>
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
           >
           </li>
-        </nav>
           
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
