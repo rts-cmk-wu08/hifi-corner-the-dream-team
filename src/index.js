@@ -45,7 +45,6 @@ root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <StrictMode>
-    <Search />
     </StrictMode>
   </React.StrictMode>
 );
