@@ -1,0 +1,29 @@
+@use "./globalStyles" as gs;
+
+.login {
+    margin: 2rem 2rem;
+    padding: 2rem 2rem;
+}
+
+.login__h2 {
+    font-size: 3rem;
+}
+
+.login__form, .login__new-customer {
+    background-color: white;
+    padding: 2rem 2rem;
+    margin: 4rem 0;
+
+    box-shadow: rgba(9, 30, 66, 0.5) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.login__new-customer {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.login__h4-red {
+    color: red;
+}
+

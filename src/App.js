@@ -4,6 +4,7 @@ import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import Video from "./components/Video";
 import HomePage from "./pages/HomePage";
+import Login from "./templates/Login"
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <HomePage />
       <Outlet />
       <Footer />
-
-      </div>
+      <Login/>
+    </div>
   );
 }
 
