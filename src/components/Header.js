@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header>
       <nav className="headerNavbar">
-        <Link to={"/Homepage"}>
+        <Link to={"/"}>
           <img
             className="hif1cornerlogo"
             src="hifi-corner-logo-01.svg"

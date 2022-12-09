@@ -55,6 +55,10 @@ select{
 .main {
   width: 1077px;
   margin: 0 auto;
+
+  &:has(video) {
+    width: 100vw;
+  }
 }
 
 
