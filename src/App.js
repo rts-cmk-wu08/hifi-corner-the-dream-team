@@ -1,16 +1,20 @@
-import "./App.scss";
-import Header from "./components/Header";
-import Footer from "./templates/Footer";
 import { Outlet } from "react-router-dom";
+import "./App.scss";
+import Footer from "./templates/Footer";
+import Header from "./components/Header";
+import ContactFormTwo from "./formComponents/contactForm";
+
 
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Outlet />
+      {/* <Header /> */}
+      <main className="main">
+        <Outlet />
+      </main>
       <Footer />
-      </div>
+    </div>
   );
 }
 

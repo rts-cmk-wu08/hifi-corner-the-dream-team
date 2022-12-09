@@ -6,6 +6,17 @@
 $primaryFont: 'open sans', 'san serif'; 
 
 
+
+/* ------------------------------------------------------------- */
+/* -- COLOR VARIABLES -- */
+$offWhite: #F4F4F2; 
+$lightGray: #E8E8E8; 
+$mediumGrey: #BBBFCA; 
+$darkGrey: #495464; 
+//black
+$orange: #FF6900; 
+
+
 /* ------------------------------------------------------------- */
 /* -- RESETS --*/
 html {
@@ -41,12 +52,13 @@ select{
 
 /* ------------------------------------------------------------- */
 /* -- COLOR VARIABLES -- */
-$offWhite: #F4F4F2; 
-$lightGray: #E8E8E8; 
-$mediumGrey: #BBBFCA; 
-$darkGrey: #495464; 
-//black
-$orange: #FF6900; 
+.main {
+  max-width: 1077px;
+  margin: 0 auto;
+  &:has(video) {
+    width: 100vw;
+  }
+}
 
 
 /* ------------------------------------------------------------- */

@@ -1,5 +1,7 @@
-import { useState } from "react";  
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs";
+import SearchBar from "./SearchBar";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -15,7 +17,7 @@ const Header = () => {
   return (
     <header>
         <nav className="headerNavbar">
-        <Link to={"/Homepage"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
+        <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link to={"/AboutUs"} className="text__decoration"><li className="navbar__onLine">about us</li></Link>
           <Link to={"/ContactUs"} className="text__decoration"><li className="navbar__onLine">contact us</li></Link>
@@ -40,6 +42,7 @@ const Header = () => {
         <Link to= {"/TubeAmplifiers"} className="text__decoration"> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
         </div>
   </header>
+ 
   );
 };
 
