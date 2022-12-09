@@ -1,30 +1,29 @@
 import ProductCard from "../templates/productCard";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import Button from "../components/Button";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
 
 const HomePage = () => {
 
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
-  const [video, setVideo] = useState();
-
-  useEffect(() => {
-    axios("http://localhost:4000/video")
-    .then(response => setVideo(response.data))
-    .catch(() => setError("Something went wrong"))
-    .finally(() => setLoading(false))
-  }, []);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState();
+  // const [productsHomePage, setProductsHomePage] = useState();
+  
+  // useEffect(() => {
+  //   axios("http://localhost:4000/products")
+  //   .then(response => setProductsHomePage(response.data))
+  //   .catch(() => setError("Oops!!, something went wrong"))
+  //   .finally(() => setLoading(false))
+  // }, []);
+  
 
   return (
     <article className="homepage">
-      { loading && <p>Loading...</p>}
-      { error && <p>{error}</p>}
-      {!error && video &&
-      <section>
-        <video autoPlay muted className="homepage__video" src={video.url}></video>
-      </section>
-      }
+    <video autoPlay muted className="hero__video" src="hero_video.mp4"></video>
+    <div className="homepage__flex">
       <h2 className="homepage__h2">popular products</h2>
+      <Button destination="/productpage" text="See all products"/>
+    </div>
       <section className="homepage__products">
         <ProductCard />
       </section>
