@@ -12,4 +12,10 @@
         font-size: 14px;
         text-transform: capitalize;
     }
+
+    &__img{
+        max-width: 200px;
+        height: auto;
+        margin: 3rem 0 2rem 0;
+    }
 }
