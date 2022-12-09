@@ -4,9 +4,9 @@
     background-color: white;
     display: grid;
     justify-items: center;
-    padding: 3rem 1.5rem 1rem 1.5rem;
+    padding: 3rem 1.5rem 2rem 1.5rem;
     box-shadow: gs.$cardShadow;
-    height: 339px;
+    height: auto;
     border-radius: 3px;
     &__h3{
         font-size: 14px;
