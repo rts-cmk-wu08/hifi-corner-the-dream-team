@@ -26,7 +26,7 @@ const ProductCard = (props) => {
       <img className="product-card__img" src={product.image.url} alt={props.alt} />
       <div className="product-card__txt">
           <h3 className="product-card__h3">{product.name}</h3>
-          <p>{product.general.dimensions}</p>
+          <p className="product-card__dimensions">{product.general.dimensions}</p>
       </div>
           <Price className="product-card__price" price={product.price + ".00"} />
       <Button destination="/productdetails" text="Read more" />
