@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header>
         <nav className="headerNavbar">
-        <Link className="text__decoration" to={"/Homepage"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
+        <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link className="text__decoration" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
           <Link className="text__decoration" to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
