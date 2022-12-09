@@ -1,6 +1,6 @@
-import { useState } from "react";  
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillPersonFill } from "react-icons/bs"
+import { BsFillPersonFill } from "react-icons/bs";
 import SearchBar from "./SearchBar";
 
 const Header = () => {
@@ -24,26 +24,54 @@ const Header = () => {
           <SearchBar className="searchbar" />
           <BsFillPersonFill className="profile__icon" />
         </nav>
+        <li
+          className="shopElmNav"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+        >
+          shop
+        </li>
 
-          <li
-            className="shopElmNav"
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-          </li>
-        
-        <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <div
+        className="div__shopList"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
         {isHovering && <p className="browseShopList">Browse Categories</p>}
-        <Link className="text__decoration" to= {"/CDPlayers"}> {isHovering && <p className="shopList">CD Players</p>} </Link>
-        <Link className="text__decoration" to= {"/CDPlayers"}> {isHovering && <p className="shopList">DVD Players</p>} </Link>
-        <Link className="text__decoration" to= {"/Preamps"}> {isHovering && <p className="shopList">Preamps</p>} </Link>
-        <Link className="text__decoration" to= {"/Speakers"}> {isHovering && <p className="shopList">Speakers</p>} </Link>
-        <Link className="text__decoration" to= {"/Turntabels"}> {isHovering && <p className="shopList">Turntabels</p>} </Link>
-        <Link className="text__decoration" to= {"/IntegratedAmplifiers"}> {isHovering && <p className="shopList">Integrated Amplifiers</p>} </Link>
-        <Link className="text__decoration" to= {"/PowerAmplifiers"}> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
-        <Link className="text__decoration" to= {"/TubeAmplifiers"}> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
-        </div>
-  </header>
+        <Link to={"/CDPlayers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">CD Players</p>}{" "}
+        </Link>
+        <Link to={"/CDPlayers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">DVD Players</p>}{" "}
+        </Link>
+        <Link to={"/Preamps"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Preamps</p>}{" "}
+        </Link>
+        <Link to={"/Speakers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Speakers</p>}{" "}
+        </Link>
+        <Link to={"/Turntabels"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Turntabels</p>}{" "}
+        </Link>
+        <Link to={"/IntegratedAmplifiers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Integrated Amplifiers</p>}{" "}
+        </Link>
+        <Link to={"/PowerAmplifiers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Power Amplifiers</p>}{" "}
+        </Link>
+        <Link to={"/TubeAmplifiers"} className="text__decoration">
+          {" "}
+          {isHovering && <p className="shopList">Tube Amplifiers</p>}{" "}
+        </Link>
+      </div>
+    </header>
   );
 };
 
