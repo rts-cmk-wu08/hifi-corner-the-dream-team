@@ -9,7 +9,7 @@ import ContactFormTwo from "./formComponents/contactForm";
 function App() {
   return (
     <div className="app">
-      <Header />
+      {/* <Header /> */}
       <main className="main">
         <Outlet />
       </main>
