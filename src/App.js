@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Footer className="footer" />
       <Outlet />
+      <Footer className="footer" />
       </div>
   );
 }
