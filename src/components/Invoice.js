@@ -63,10 +63,6 @@ const Invoice = () => {
             <td className="invoice__p invoice__p--center">dynamisk antal</td>
             <td className="invoice__p  invoice__p--right">Dynamisk total</td>
           </tr>
-
-        </table>
-      </div>
-
         </tbody>
       </table>
       <section className="invoice__total">
@@ -94,7 +90,6 @@ const Invoice = () => {
         <span className="invoice__p--dark">Mail:</span>
         sales@hificorner.co.uk
       </p>
-
     </section>
   );
 };
