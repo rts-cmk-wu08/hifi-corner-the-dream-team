@@ -1,11 +1,11 @@
 @use './globalStyles' as gs; 
 
-.App {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .App {
+//   font-family: sans-serif;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 .search-container {
   width: 14rem;
@@ -31,11 +31,11 @@
   background-color: white;
 }
 
-input {
-  width: 14rem;
-  height: 2rem;
-  // border: none;
-}
+// input {
+//   width: 14rem;
+//   height: 2rem;
+//   // border: none;
+// }
 
 .search-inner {
   font-size: 1.4rem;
