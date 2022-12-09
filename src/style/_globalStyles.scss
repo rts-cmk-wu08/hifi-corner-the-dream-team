@@ -53,8 +53,11 @@ select{
 /* ------------------------------------------------------------- */
 /* -- COLOR VARIABLES -- */
 .main {
-  max-width: 1200px;
+  max-width: 1077px;
   margin: 0 auto;
+  &:has(video) {
+    width: 100vw;
+  }
 }
 
 

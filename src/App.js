@@ -4,6 +4,7 @@ import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import ContactFormTwo from "./formComponents/contactForm";
 
+
 function App() {
   return (
     <div className="app">
@@ -13,6 +14,7 @@ function App() {
         <Outlet />
       </main>
       <Footer />
+
     </div>
   );
 }

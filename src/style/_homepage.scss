@@ -1,7 +1,7 @@
 @use "./globalStyles" as gs;
 
 .homepage{
-    max-width: 1200px;
+    max-width: 1077px;
     margin: 0 auto;
     &__h2{
         text-transform: uppercase;
@@ -43,4 +43,9 @@
         font-weight: 700;
     }
    }
+
+   &__video {
+    width: 1077px;
+   }
 }
+
