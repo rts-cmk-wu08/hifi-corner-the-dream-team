@@ -1,29 +1,15 @@
 import ProductCard from "../templates/productCard";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
 
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
-  const [video, setVideo] = useState();
 
-  useEffect(() => {
-    axios("http://localhost:4000/video")
-    .then(response => setVideo(response.data))
-    .catch(() => setError("Something went wrong"))
-    .finally(() => setLoading(false))
-  }, []);
+  
 
   return (
+
     <article className="homepage">
-      { loading && <p>Loading...</p>}
-      { error && <p>{error}</p>}
-      {!error && video &&
-      <section>
-        <video autoPlay muted className="homepage__video" src={video.url}></video>
-      </section>
-      }
+    <video autoPlay muted className="hero__video" src="hero_video.mp4"></video>
       <h2 className="homepage__h2">popular products</h2>
       <section className="homepage__products">
         <ProductCard />
