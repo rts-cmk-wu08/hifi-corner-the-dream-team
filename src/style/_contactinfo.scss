@@ -19,7 +19,8 @@
         line-height: 2rem;
         box-shadow: gs.$btnShadow;
         width: 100%;
-        margin: 0.5rem 0 1rem;
+        margin: 0.5rem 0 0.5rem;
+        padding-left: 0.5rem;
     }
     &__heading{
         line-height: 39px;
@@ -29,8 +30,18 @@
         margin: 3.5rem 0 5.125rem 0;
         display: grid;
         justify-items: end;
+        &:disabled{
+           opacity: 0.35; 
+        }
     }
     &__star{
         color: gs.$orange;
+    }
+    &__error{
+        border: 2px solid red;
+        &--msg{
+            font-size: 10px;
+            margin-bottom: 1rem;
+        }
     }
 }

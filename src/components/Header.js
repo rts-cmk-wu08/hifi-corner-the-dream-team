@@ -16,21 +16,37 @@ const Header = () => {
 
   return (
     <header>
-        <nav className="headerNavbar">
-        <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
-          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
-          <Link className="text__decoration" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
-          <Link className="text__decoration" to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
-          <SearchBar className="searchbar" />
-          <BsFillPersonFill className="profile__icon" />
-        </nav>
+      <nav className="headerNavbar">
+        <Link className="text__decoration" to={"/"}>
+          <img
+            className="hif1cornerlogo"
+            src="hifi-corner-logo-01.svg"
+            alt="hifi corner logo"
+          />
+        </Link>
         <li
-          className="shopElmNav"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
+          className="navbar__onLine"
         >
           shop
         </li>
+        <Link className="text__decoration" to={"/AboutUs"}>
+          <li className="navbar__onLine">about us</li>
+        </Link>
+        <Link className="text__decoration" to={"/ContactUs"}>
+          <li className="navbar__onLine">contact us</li>
+        </Link>
+        <SearchBar className="searchbar" />
+        <BsFillPersonFill className="profile__icon" />
+      </nav>
+      <li
+        className="shopElmNav"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
+        shop
+      </li>
 
       <div
         className="div__shopList"
