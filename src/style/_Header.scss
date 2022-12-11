@@ -1,11 +1,22 @@
 @use './globalStyles' as gs; 
 
-header{
+.header{
   background-color: black;
   height: 6rem;
   width: 100%;
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__right{
+    display: flex;
+  }
+  &__icon{
+    color: white;
+
+  }
 }
 .navbar__onLine{
   display: inline;
@@ -31,13 +42,8 @@ header{
   left: 0.7rem;
 }
 
-.headerNavbar, .searchbar, .profile__icon {
+.header__navbar, .profile__icon {
   position: relative;
-}
-
-.searchbar {
-  left: 48rem;
-  bottom: 2rem;
 }
 
 .profile__icon, .navbar__onLine {
