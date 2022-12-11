@@ -1,7 +1,11 @@
+import FetchTest from "../components/fetchTest";
+
 const MoreInfo = () => {
-    return ( 
-        <></>
-     );
-}
- 
+  return (
+    <>
+      <FetchTest />
+    </>
+  );
+};
+
 export default MoreInfo;
