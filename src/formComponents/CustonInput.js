@@ -1,23 +1,37 @@
-import { useField } from "formik";
+import { Field, Form, Formik, useField } from "formik";
+import CustomInfo from "./customeInfo";
+import { yourInfoSchema } from "./formValidation";
 
-const CustomInput = (label, ...props) => {
-  const [field, meta, helpers] = useField(props);
-
+const CustomInputTwo = () => {
   return (
-    <>
-      <label>{label}</label>
-      <input
-        {...field}
-        {...props}
-        className={`form__input ${
-          meta.errors && meta.touched ? "form__error" : ""
-        }`}
-        {meta.errors && meta.touched && (
-            <p className="form__error--msg">{meta.errors}</p>
-          )}
-      />
-    </>
+    <Formik
+      initialValues={{
+        label: "",
+        name: "",
+        city: "",
+        zip: "",
+        address: "",
+        email: "",
+        phone: "",
+      }}
+      validationSchema={yourInfoSchema}
+    >
+      {(props) => (
+        <Form>
+          <CustomInfo
+            label=""
+            name=""
+            city=""
+            zip=""
+            address=""
+            email=""
+            phone=""
+          />
+          <button type="submit">Submit</button>
+        </Form>
+      )}
+    </Formik>
   );
 };
 
-export default CustomInput;
+export default CustomInputTwo;
