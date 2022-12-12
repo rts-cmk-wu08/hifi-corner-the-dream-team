@@ -3,10 +3,14 @@
     background-color: white;
     box-shadow: gs.$cardShadow;
     width: 70.25rem;
-
     height: 40.125rem;
     margin: 0 auto;
     padding: 5.125rem 3rem;
+    &__2grid{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: 2%;
+    }
     &__group{
         display: grid;
         &--short{
