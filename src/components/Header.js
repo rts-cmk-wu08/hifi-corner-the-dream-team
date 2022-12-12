@@ -27,20 +27,13 @@ const Header = () => {
           </div>
           <IoPersonSharp className="profile__icon"/>
           <FaShoppingCart className="cart__icon"/>
-        </nav>
-        <li
-          className="shopElmNav"
-          onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}
-        >
-        </li>
-        
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-          >
+            >
           </li>
+            </nav>
           
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
