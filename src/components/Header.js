@@ -34,10 +34,7 @@ const Header = () => {
           onMouseOut={handleMouseOut}
         >
         </li>
-          <Link to={"/AboutUs"} className="text__decoration"><li className="navbar__onLine">about us</li></Link>
-          <Link to={"/ContactUs"} className="text__decoration"><li className="navbar__onLine">contact us</li></Link>
-        </nav>
-
+        
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
