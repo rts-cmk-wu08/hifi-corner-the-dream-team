@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillPersonFill } from "react-icons/bs";
 import SearchBar from "./SearchBar";
+import { IoPersonSharp } from "react-icons/io5"
+import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -21,15 +22,17 @@ const Header = () => {
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link className="text__decoration" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
           <Link className="text__decoration" to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
-          <SearchBar className="searchbar" />
-          <BsFillPersonFill className="profile__icon" />
+          <div className="searchbar">
+          <SearchBar />
+          </div>
+          <IoPersonSharp className="profile__icon"/>
+          <FaShoppingCart className="cart__icon"/>
         </nav>
         <li
           className="shopElmNav"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
-          shop
         </li>
 
       <div
