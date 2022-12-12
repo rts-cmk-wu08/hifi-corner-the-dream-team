@@ -31,10 +31,10 @@ const Header = () => {
         >
           shop
         </li>
-        <Link to={"/AboutUs"} className="text__decoration">
+        <Link to={"/aboutus"} className="text__decoration">
           <li className="navbar__onLine">about us</li>
         </Link>
-        <Link to={"/ContactUs"} className="text__decoration">
+        <Link to={"/contactpage"} className="text__decoration">
           <li className="navbar__onLine">contact us</li>
         </Link>
         <li
