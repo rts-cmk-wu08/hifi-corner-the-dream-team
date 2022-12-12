@@ -20,17 +20,11 @@ export default function Search() {
   return (
     <div className="searchbar">
       <div className="searchbar__inner">
-        <input
-          placeholder="Search product..."
-          type="text"
-          value={value}
-          onChange={onChange}
-          className="searchbar__input"
-        />
-        <div className="searchbar__btn">
-          <Link to={"/Tets"}>
-            <FaSearch color="000000" />
-          </Link>
+        <input placeholder="Search product..." type="text" value={value} onChange={onChange} className="searchbar__input"/>
+      <div className="searchbar__btn">
+        <Link to={"/Tets"}>
+          <FaSearch color="000000" />
+        </Link>
         </div>
       </div>
       <div className="dropdown">
@@ -58,5 +52,6 @@ export default function Search() {
           ))}
       </div>
     </div>
+    
   );
 }
