@@ -18,35 +18,31 @@ export default function Search() {
   };
 
   return (
-    <div className="App">
-    
-      <div className="search-container">
-        <div className="search-inner">
-          <input placeholder="Search product..." type="text" value={value} onChange={onChange} className="input__search" />
-          <div className="fontuser">
-      <Link to={"/Tets"}>
-      <FaSearch color="000000" />
-      </Link>
-          </div>
-          </div>
-    <div className="dropdown">
-          {data
-            .filter((item) => {
-                const searchTerm = value.toLowerCase();
-                const searchProducts = item.search_products.toLowerCase();
-                
-                return (
-                    searchTerm &&
-                    searchProducts.startsWith(searchTerm) &&
-                    searchProducts !== searchTerm
-                    );
-                })
-                .slice(0, 10)
-                .map((item) => (
-                    <div onClick={() => onSearch(item.search_products)} className="dropdown-row" key={item.search_products} > {item.search_products} </div>
-                    ))}
-        </div>
+
+    <div className="searchbar">
+      <div className="searchbar__inner">
+        <input placeholder="Search product..." type="text" value={value} onChange={onChange} className="searchbar__input"/>
+      <div className="searchbar__btn">
+        <Link to={"/Tets"}>
+          <FaSearch color="000000" />
+        </Link>
       </div>
     </div>
+  <div className="dropdown">
+    {data.filter((item) => {
+      const searchTerm = value.toLowerCase();
+      const searchProducts = item.search_products.toLowerCase();
+    return (
+      searchTerm &&
+      searchProducts.startsWith(searchTerm) &&
+      searchProducts !== searchTerm
+  );
+})
+.slice(0, 10).map((item) => (
+<div onClick={() => onSearch(item.search_products)} className="dropdown-row" key={item.search_products}>{" "}{item.search_products}{" "}</div>
+))}
+</div>
+</div>
+    
   );
 }

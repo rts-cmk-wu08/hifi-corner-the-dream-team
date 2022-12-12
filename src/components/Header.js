@@ -16,24 +16,21 @@ const Header = () => {
   };
 
   return (
-    <header>
-        <nav className="headerNavbar">
+    <header className="header">
+      <div className="header__wrapper">
+        <nav className="header__navbar">
         <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
           <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
           <Link className="text__decoration" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
           <Link className="text__decoration" to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
-          <div className="searchbar">
-          <SearchBar />
-          </div>
-          <IoPersonSharp className="profile__icon"/>
-          <FaShoppingCart className="cart__icon"/>
+         
           <li
             className="shopElmNav"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             >
           </li>
-            </nav>
+
           
         <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
@@ -46,6 +43,14 @@ const Header = () => {
         <Link to= {"/PowerAmplifiers"} className="text__decoration"> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
         <Link to= {"/TubeAmplifiers"} className="text__decoration"> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
         </div>
+      </nav>
+
+      <div className="header__right">
+          <SearchBar />
+          <IoPersonSharp className="profile__icon"/>
+          <FaShoppingCart className="cart__icon"/>
+      </div>
+    </div>
   </header>
  
 
