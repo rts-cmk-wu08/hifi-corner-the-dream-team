@@ -1,5 +1,29 @@
 @use './globalStyles' as gs; 
 
+.searchbar{
+  width: 200px;
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem;
+    align-items: center;
+  }
+  &__input{
+    grid-area: 1 / 1;
+    background-color: white;
+    height: 38px;
+    padding-left: 12px;
+    border-radius: 3px;
+  }
+  &__btn{
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+  }
+}
+
+
 // .App {
 //   font-family: sans-serif;
 //   display: flex;
@@ -7,29 +31,47 @@
 //   align-items: center;
 // }
 
-.search-container {
-  width: 14rem;
-  display: flex;
-  flex-direction: column;
-}
+// .search-inner {
+//   display: grid;
+//   grid-column: 1fr;
+//   font-size: 1.4rem;
+  //position:relative;
+//}
 
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-}
+//.search-container {
+  //width: 14rem;
+  //display: flex;
+  //flex-direction: column;
+//}
 
-.dropdown:empty {
-  border: none;
-}
+//.dropdown {
+  //display: flex;
+  //flex-direction: column;
+  //border: 1px solid gray;
+//}
 
-.dropdown-row {
-  cursor: pointer;
-  text-align: start;
-  margin: 2px 0;
-  text-decoration: none;
-  background-color: white;
-}
+// .dropdown:empty {
+//   border: none;
+// }
+
+// .dropdown-row {
+//   cursor: pointer;
+//   text-align: start;
+//   margin: 2px 0;
+//   text-decoration: none;
+//   background-color: white;
+// }
+//.searchbar {
+  //width: 12.56rem;
+  //height: 2.4rem;
+  //grid-area: 1 / 1;
+  //&__icon{
+      //position: relative;
+      //right: 2rem;
+      //font-size: 1.5rem;
+      //top: 0.3rem;
+  //}
+//}
 
 // input {
 //   width: 14rem;
@@ -37,30 +79,20 @@
 //   // border: none;
 // }
 
-.search-inner {
-  font-size: 1.4rem;
-  position:relative;
-}
 .fontuser{
-  height: 1.5rem;
-  width: 1.5rem;
-  padding: 4px;
-  position: absolute;
-  top:50%;
-  left: 12rem;
-  transform: translateY(-50%);
+  //height: 1.5rem;
+  //width: 1.5rem;
+  //line-height: 38px;
+  //padding: 4px;
+  grid-area: 1 / 1;
+  //position: absolute;
+  //top:50%;
+  //left: 12rem;
+  //transform: translateY(-50%);
 }
 .input__search{
+  grid-area: 1 / 1;
   padding-left: 0.25rem;
 }
 
-.searchbar {
-    width: 12.56rem;
-    height: 2.4rem;
-    &__icon{
-        position: relative;
-        right: 2rem;
-        font-size: 1.5rem;
-        top: 0.3rem;
-    }
-}
+
