@@ -20,7 +20,7 @@ const Invoice = () => {
       </div>
 
       <div className="invoice__seller">
-        <img src="" alt="" />
+        <img className="invoice__img" src="./hifi-corner-logo-01.svg" alt="" />
         <p className="invoice__p invoice__p--dark">44 Cow Wynd, Falkirk</p>
         <p className="invoice__p invoice__p--dark">Central Region, FK1 1PU</p>
         <p className="invoice__p">0131 556 7901 </p>

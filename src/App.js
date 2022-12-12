@@ -1,6 +1,6 @@
+import { Outlet } from "react-router-dom";
 import "./App.scss";
-
-
+import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import HomePage from "./pages/HomePage";
@@ -15,9 +15,12 @@ function App() {
       <HomePage />
       <SearchBar />
       <Header />
-      </div>
-      )
-      }
-
+      <main className="main">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
