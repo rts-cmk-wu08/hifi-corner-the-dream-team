@@ -1,13 +1,12 @@
 @use './globalStyles' as gs; 
 
 .form{
+    max-width: 1200px;
     background-color: white;
-    max-width: 70.25rem;
-    height: 40.125rem;
     margin: 0 auto;
     padding: 5.125rem 3rem;
     box-shadow: gs.$cardShadow;
-    &__group{
+    &__container{
         display: grid;
         &--short{
             padding-right: 330px;
@@ -19,6 +18,9 @@
         border-radius: 2px;
         line-height: 2rem;
         box-shadow: gs.$btnShadow;
+        width: 100%;
+        margin: 0.5rem 0 0.5rem;
+        padding-left: 0.5rem;
     }
     &__heading{
         line-height: 39px;
@@ -28,8 +30,23 @@
         margin: 3.5rem 0 5.125rem 0;
         display: grid;
         justify-items: end;
+        &:disabled{
+           opacity: 0.35; 
+        }
     }
     &__star{
         color: gs.$orange;
+    }
+    &__error{
+        border: 2px solid red;
+        &--msg{
+            font-size: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+    &__postal{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 1.5rem;
     }
 }

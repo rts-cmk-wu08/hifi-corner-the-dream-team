@@ -53,9 +53,8 @@ select{
 /* ------------------------------------------------------------- */
 /* -- COLOR VARIABLES -- */
 .main {
-  width: 1077px;
+  max-width: 1200px;
   margin: 0 auto;
-
   &:has(video) {
     width: 100vw;
   }
@@ -92,7 +91,7 @@ h2{
 /* -- APP WRAPPER -- */
 .app{
   width: 100%;
-  background-color: $lightGray;
+  background-color: $offWhite;
   margin: 0 auto;
 }
 
@@ -102,6 +101,7 @@ h2{
 
 /* -- DROPSHADOW VARIABLE -- */
 $btnShadow: rgba(0, 0, 0, 0.25) 2.5px 2.5px 2.6px; 
+$iconShadow: rgba(0, 0, 0, 0.25) 2px 4px 8px; 
 $cardShadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
 
 

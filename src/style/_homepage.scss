@@ -5,7 +5,7 @@
     margin: 0 auto;
     &__h2{
         text-transform: uppercase;
-        margin: 2rem 2rem;
+        margin: 0.5rem 2rem;
         &--white{
             color: white;
             margin-left: 0;
@@ -44,8 +44,9 @@
     }
    }
 
-   &__video {
-    width: 1077px;
+   &__flex {
+    display: flex;
+    gap: 33rem;
+    height: 3rem;
    }
 }
-
