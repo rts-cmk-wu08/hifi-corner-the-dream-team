@@ -1,8 +1,6 @@
 @use "./globalStyles" as gs;
 
 .homepage{
-    max-width: 1077px;
-    margin: 0 auto;
     &__h2{
         text-transform: uppercase;
         margin: 0.5rem 2rem;

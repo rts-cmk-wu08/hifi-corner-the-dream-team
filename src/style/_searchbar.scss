@@ -1,6 +1,7 @@
 @use './globalStyles' as gs;
+
 .searchbar{
-width: 200px;
+  width: 200px;
   &__inner{
     display: grid;
     grid-template-columns: 1fr;
@@ -25,9 +26,12 @@ width: 200px;
 
 .fontuser{
   grid-area: 1 / 1;
-}
+
+  }
 .input__search{
   grid-area: 1 / 1;
   padding-left: 0.25rem;
 }
+
+
 
