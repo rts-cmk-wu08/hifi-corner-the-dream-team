@@ -20,7 +20,6 @@ import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
 import NotFound from "./pages/NotFound";
-import Search from "./components/SearchBar";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
