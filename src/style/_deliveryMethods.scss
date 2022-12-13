@@ -32,3 +32,36 @@
     color: white;
     background-color: #495464;
 }
+
+.deliveryMethods__img-fedex {
+    max-width: 20%; 
+    height: auto;
+    padding: 2rem 0;
+}
+
+.deliveryMethods__img-map {
+    max-width: 100%; 
+    height: auto;
+    padding: 2rem 0;
+}
+
+.deliveryMethods__hr {
+    margin: 2rem 0;
+}
+
+.deliveryMethods__postoffices, .deliveryMethods__collects {
+    display: flex;
+    gap: 1rem;
+}
+
+.deliveryMethods__collects {
+    margin-top: 2rem;
+}
+
+.deliveryMethods__collects-p {
+    margin-left: 2rem;
+}
+
+.deliveryMethods__home {
+    margin-top: 2rem;
+}
