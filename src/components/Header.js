@@ -54,6 +54,7 @@ const Header = () => {
   //       </div> */}
   //     </nav>
 
+
   //     <div className="header__right">
   //         <SearchBar />
   //         <IoPersonSharp className="profile__icon"/>

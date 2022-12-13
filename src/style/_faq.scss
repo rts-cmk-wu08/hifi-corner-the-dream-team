@@ -1,29 +1,43 @@
 @use "./globalStyles" as gs;
 
-.p__shippingSplit{
-    width:27rem;
-}
-.div__faqcentered{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    margin: 0 auto;
+.faq{
+    background-color: white;
     box-shadow: gs.$cardShadow;
+    padding: 1.5rem 2.25rem;
+    margin-bottom: 3rem;
+    &__h3{
+        font-weight: 400;
+        margin: 0 0 2rem 0;
+    }
+    &__txt p{
+        margin-bottom: 1rem;
+    }
 }
-.faq__h3headline{
-    font-size: 2rem;
-    color: grey;
-    text-transform: uppercase;
-    padding-bottom: 2rem;
-}
-.h5__headlineFaq{
-    font-size: 2rem;
-    padding-bottom: 1.25rem;
-    padding-top: 1.25rem;
-    text-transform: uppercase;
-}
-.faq__h5Split{
-    padding-bottom: 1.25rem;
-}
-.faq__spaceTop{
-    padding-top: 1.25rem;
-}
+
+// .p__shippingSplit{
+//     width:27rem;
+// }
+// .div__faqcentered{
+//     padding-left: 2.5rem;
+//     padding-right: 2.5rem;
+//     margin: 0 auto;
+//     box-shadow: gs.$cardShadow;
+// }
+// .faq__h3headline{
+//     font-size: 2rem;
+//     color: grey;
+//     text-transform: uppercase;
+//     padding-bottom: 2rem;
+// }
+// .h5__headlineFaq{
+//     font-size: 2rem;
+//     padding-bottom: 1.25rem;
+//     padding-top: 1.25rem;
+//     text-transform: uppercase;
+// }
+// .faq__h5Split{
+//     padding-bottom: 1.25rem;
+// }
+// .faq__spaceTop{
+//     padding-top: 1.25rem;
+// }
