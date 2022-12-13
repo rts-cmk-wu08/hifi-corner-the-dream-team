@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { IoPersonSharp } from "react-icons/io5"
 import { FaShoppingCart } from "react-icons/fa";
@@ -16,6 +16,7 @@ const Header = () => {
   // };
 
   const [visible, setVisible] = useState(false);
+
 
   const handlevisibility = () => {
     setVisible(!visible)
@@ -66,10 +67,10 @@ const Header = () => {
   <header className={visible ? "visible" : ``}>
   <div className='header__wrapper'>
   <nav className='header__navbar'>
-    <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
-    <li className='white__text list__style__type shop nav__li' activeClassName="selected" onClick={handlevisibility}>Shop</li>
-      <Link className="text__decoration white__text list__style__type nav__li" activeClassName="active" to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
-      <Link className="text__decoration white__text list__style__type nav__li" activeClassName="active" to={"/ContactPage"}><li className="navbar__onLine">contact us</li></Link>
+    <NavLink className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></NavLink>
+    <li className='white__text list__style__type shop nav__li {}' onClick={handlevisibility}>Shop</li>
+      <NavLink className="text__decoration white__text list__style__type nav__li" to={"/AboutUs"}><li className="navbar__onLine">about us</li></NavLink>
+      <NavLink className="text__decoration white__text list__style__type nav__li" to={"/ContactPage"}><li className="navbar__onLine">contact us</li></NavLink>
     </nav>
      <div className="header__right">
       <SearchBar />

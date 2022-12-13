@@ -206,6 +206,6 @@ header {
   color: #A39161;
 }
 
-.nav__li:hover {
+.nav__li:hover, .nav__li.active {
   font-weight: bold;
 }
