@@ -1,7 +1,7 @@
 import * as yup from "yup";
 
 export const contactSchema = yup.object().shape({
-  name: yup.string().required("* Please enter your name"),
+  fullname: yup.string().required("* Please enter your name"),
   email: yup.string().email("* Please enter a valid email").required(),
   subject: yup.string().required("* Please enter a subject"),
   message: yup.string().max(500).required("* Please write a message"),
@@ -38,4 +38,9 @@ export const yourInfoSchema = yup.object().shape({
     .max(100, "Address cannot be more than 100 characters long"),
   email: yup.string().email("* Please enter a valid email").required(),
   phone: yup.string().matches(phoneRegExp, "* Phone number is not valid"),
+});
+
+export const loginSchema = yup.object().shape({
+  username: yup.string().required("Please enter your name"),
+  email: yup.string().email("* Please enter a valid email").required(),
 });

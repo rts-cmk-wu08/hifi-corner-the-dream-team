@@ -18,6 +18,11 @@ const ProductCardTwo = (props) => {
             <p>{test.attributes.subtitle}</p>
             <br />
           </div>
+          <div className="product-card__btn-box">
+            <button className="product-card__btn">-</button>
+            <input type="text"></input>
+            <button className="product-card__btn">+</button>
+          </div>
         </div>
       ))}
     </div>
