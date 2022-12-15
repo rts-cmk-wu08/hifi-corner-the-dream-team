@@ -1,7 +1,5 @@
 const PaymentPage = () => {
-    return ( 
-        <></>
-     );
-}
- 
+  return <></>;
+};
+
 export default PaymentPage;
