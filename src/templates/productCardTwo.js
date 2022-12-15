@@ -1,6 +1,6 @@
 import useFetch from "../hooks/useFetch";
 
-const FetchTest = () => {
+const ProductCardTwo = (props) => {
   const { loading, error, data } = useFetch(
     "http://localhost:1337/api/products"
   );
@@ -9,22 +9,19 @@ const FetchTest = () => {
   if (error) return <p>Error!</p>;
   console.log(data);
 
-  //   const titles = data.data.map((test) => test.attributes.title);
-  //   console.log(titles);
-
   return (
-    <section className="product-card">
+    <div>
       {data.data.map((test) => (
         <div key={test.id} className="test-product">
-          <div className="product-card__txts">
+          <div className="hello">
             <p>{test.attributes.title}</p>
             <p>{test.attributes.subtitle}</p>
             <br />
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 
-export default FetchTest;
+export default ProductCardTwo;

@@ -1,4 +1,4 @@
-import ProductCard from "../templates/productCard";
+import ProductCardTwo from "../templates/productCardTwo";
 
 const Productpage = () => {
   return (
@@ -11,15 +11,7 @@ const Productpage = () => {
           <div className="product-page__choice"></div>
         </section>
         <div className="product-page__3grid">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCardTwo />
         </div>
       </div>
     </section>
