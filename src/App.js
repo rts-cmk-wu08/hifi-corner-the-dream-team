@@ -8,17 +8,19 @@ import ImageSlider from "./templates/ImageSlider";
 import { SliderData } from "./templates/SliderData";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-
+import CartContextProvider from "./context/cartContext";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main className="main">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <CartContextProvider>
+      <div className="app">
+        <Header />
+        <main className="main">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </CartContextProvider>
   );
 }
 
