@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+import { useState } from "react";  
+import { Link } from "react-router-dom";
+=======
 import { useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { IoPersonSharp } from "react-icons/io5"
 import { FaShoppingCart } from "react-icons/fa";
+>>>>>>> 7804c93ed8e1c6dbaf9f8ad53725e043497edb6d
 
 const Header = () => {
   // const [isHovering, setIsHovering] = useState(false);
@@ -25,6 +30,33 @@ const Header = () => {
 
 
   return (
+<<<<<<< HEAD
+    <header>
+        <nav className="headerNavbar">
+        <Link to={"/Homepage"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
+          <li onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="navbar__onLine">shop</li>
+          <Link to={"/AboutUs"}><li className="navbar__onLine">about us</li></Link>
+          <Link to={"/ContactUs"}><li className="navbar__onLine">contact us</li></Link>
+        
+          <img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo"/>
+          <li className="shopElmNav" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >shop</li>
+          <li>about us</li>
+          <li>contact us</li>
+        </nav>
+        
+        <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        {isHovering && <p className="browseShopList">Browse Categories</p>}
+        <Link to= {"/CDPlayers"}> {isHovering && <p className="shopList">CD Players</p>} </Link>
+        <Link to= {"/CDPlayers"}> {isHovering && <p className="shopList">DVD Players</p>} </Link>
+        <Link to= {"/Preamps"}> {isHovering && <p className="shopList">Preamps</p>} </Link>
+        <Link to= {"/Speakers"}> {isHovering && <p className="shopList">Speakers</p>} </Link>
+        <Link to= {"/Turntabels"}> {isHovering && <p className="shopList">Turntabels</p>} </Link>
+        <Link to= {"/IntegratedAmplifiers"}> {isHovering && <p className="shopList">Integrated Amplifiers</p>} </Link>
+        <Link to= {"/PowerAmplifiers"}> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
+        <Link to= {"/TubeAmplifiers"}> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
+        </div>
+    </header>
+=======
 
   //   <header className="header">
   //     <div className="header__wrapper">
@@ -112,6 +144,7 @@ const Header = () => {
       
       </ul>  
   </header>
+>>>>>>> 7804c93ed8e1c6dbaf9f8ad53725e043497edb6d
   );
 };
 

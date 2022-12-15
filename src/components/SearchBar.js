@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+// import { IoSearch } from "react-icons/io5";
+=======
 import { useState } from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
@@ -16,8 +19,23 @@ export default function Search() {
 
     console.log("search ", searchTerm);
   };
+>>>>>>> 7804c93ed8e1c6dbaf9f8ad53725e043497edb6d
 
   return (
+<<<<<<< HEAD
+    <div>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        className="searchbar"
+        placeholder="Search product..."
+      />
+      {/* <IoSearch className="searchbar__icon" /> */}
+    </div>
+  );
+};
+=======
     <div className="searchbar">
       <div className="searchbar__inner">
         <input placeholder="Search product..." type="text" value={value} onChange={onChange} className="searchbar__input"/>
@@ -32,6 +50,7 @@ export default function Search() {
           .filter((item) => {
             const searchTerm = value.toLowerCase();
             const searchProducts = item.search_products.toLowerCase();
+>>>>>>> 7804c93ed8e1c6dbaf9f8ad53725e043497edb6d
 
             return (
               searchTerm &&
