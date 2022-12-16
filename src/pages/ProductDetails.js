@@ -1,17 +1,37 @@
 import Button from "../components/Button";
 import ColorCheckbox from "../components/ColorCheckbox";
 import CountItems from "../components/CountItems";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const ProductDetails = () => {
+
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState();
+  const [products, setProducts] = useState();
+
+  useEffect(() => {
+    axios("http://localhost:4000/products?_limit=1")
+    .then(response => setProducts(response.data))
+    .catch(() => setError("Oops!!, something went wrong"))
+    .finally(() => setLoading(false))
+  }, []);
+
   return (
+    <div>
     <article className="details">
       <h1 className="details__h1">PRODUCT</h1>
       <section className="details__card">
         <section className="details__product">
           {/* gallery */}
           <img src="" alt="" />
-          <div className="details__txt">
-            <h4 className="details__h4">Auralic Aries G2.1 Streamer</h4>
+          {loading && <p>Loading...</p>}
+          {error && <p>{error}</p>}
+          {products && products.map(product => (
+            <div className="details__txt">
+            <h4 className="details__h4">{product.name}</h4>
+
+         
             <h5 className="details__h5">(Digital Output)</h5>
             <p className="details__p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ut
@@ -38,7 +58,8 @@ const ProductDetails = () => {
               <Button destination="/" text="Add to cart" />
             </div>
           </div>
-        </section>
+        ))}
+    </section>
         <section className="details__specification">
           <h3 className="details__h3">product specification</h3>
           <table className="details__table">
@@ -64,6 +85,7 @@ const ProductDetails = () => {
         </section>
       </section>
     </article>
+    </div>
   );
 };
 
