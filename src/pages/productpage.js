@@ -1,6 +1,8 @@
+import ProductCardTwo from "../templates/productCardTwo";
 import ProductCard from "../templates/productCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 
 const Productpage = () => {
 
@@ -30,11 +32,11 @@ const Productpage = () => {
           <div className="product-page__choice"></div>
         </section>
         <div className="product-page__3grid">
+          <ProductCardTwo />
         {products && products.map(product => (
           <ProductCard product={product}/>
 
         ))}
-
         </div>
       </div>
     </section>

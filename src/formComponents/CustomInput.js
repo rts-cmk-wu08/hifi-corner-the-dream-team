@@ -1,22 +1,24 @@
 import { useField } from "formik";
 
-const CustomInfo = (label, ...props) => {
+const CustomInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
+
   return (
     <>
-      <label>{label}</label>
+      <label className="form__label">
+        {label} <span className="form__star">*</span>
+      </label>
       <input
         {...field}
         {...props}
         className={`form__input ${
-          meta.error && meta.touched ? "form__error" : ""
+          meta.touched && meta.error ? "form__error" : ""
         }`}
       />
-      {meta.error && meta.touched && (
+      {meta.touched && meta.error && (
         <p className="form__error--msg">{meta.error}</p>
       )}
     </>
   );
 };
-
-export default CustomInfo;
+export default CustomInput;
