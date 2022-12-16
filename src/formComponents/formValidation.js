@@ -44,3 +44,11 @@ export const loginSchema = yup.object().shape({
   username: yup.string().required("Please enter your name"),
   email: yup.string().email("* Please enter a valid email").required(),
 });
+
+export const createAccountSchema = yup.object().shape({
+  firstname: yup.string().required("Please enter your firstname"),
+  lastname: yup.string().required("Please enter your lastname"),
+  email: yup.string().email("* Please enter a valid email").required(),
+  password: yup.string().password().required(),
+  repeatPassword: yup.string().required(),
+});
