@@ -2,7 +2,11 @@ import { Outlet } from "react-router-dom";
 import "./App.scss";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import { ShoppingCartProvider } from "./context/CartContext.tsx";
+import SearchBar from "./components/SearchBar";
+import Video from "./components/Video";
+import HomePage from "./pages/HomePage";
+import CartCard from "./templates/cartCard";
+import ContactInfo from "./components/ContactInfo";
 
 function App() {
   return (
@@ -13,8 +17,8 @@ function App() {
           <Outlet />
         </main>
         <Footer />
+       </ShoppingCartProvider>
       </div>
-    </ShoppingCartProvider>
   );
 }
 
