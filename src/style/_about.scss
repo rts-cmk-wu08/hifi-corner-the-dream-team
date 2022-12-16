@@ -1,0 +1,36 @@
+@use './globalStyles' as gs; 
+
+.about{
+    &__container{
+        display: grid;
+        row-gap: 2rem;
+        background-color: white;
+        box-shadow: gs.$cardShadow;
+        padding: 1.5rem 2.25rem;
+        margin-bottom: 2rem;
+    }
+    &__h1{
+        margin-top: 2rem;
+    }
+    &__2grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.5rem;
+        align-items: center;
+    }  
+    &__p{
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        &--orange{
+            color: gs.$orange;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 0rem;
+        }
+    }
+    &__h5{
+        text-align: center;
+    }
+}

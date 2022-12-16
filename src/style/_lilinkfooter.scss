@@ -1,0 +1,9 @@
+@use './globalStyles' as gs; 
+
+.footer__link {
+    font-family: gs.$primaryFont;
+    color: white;
+    font-size: 1.20rem;
+    text-decoration: none;
+    line-height: 2.5;
+}

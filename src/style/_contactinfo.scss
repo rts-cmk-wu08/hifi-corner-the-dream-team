@@ -1,16 +1,33 @@
 @use './globalStyles' as gs; 
+
 .form{
+    width: 100%;
     background-color: white;
-    max-width: 70.25rem;
+    margin: 0 auto 2rem auto;
+    box-shadow: gs.$cardShadow;
+    width: 70.25rem;
     height: 40.125rem;
     margin: 0 auto;
     padding: 5.125rem 3rem;
-    box-shadow: gs.$cardShadow;
-    &__group{
+    &__2grid{
         display: grid;
-        &--short{
-            padding-right: 330px;
-        }
+        grid-template-columns: 3fr 2fr;
+        column-gap: 2%;
+    }
+    &__group{
+    margin: 0 auto;
+    padding: 5.125rem 3rem;
+    box-shadow: gs.$cardShadow;
+    &__container{
+        display: grid;
+    }
+    &__short{
+        padding-right: 330px;
+    }
+    &__p--light{
+        font-size: 14px;
+        color: gs.$darkGrey;
+        margin-bottom: 3rem;
     }
     &__input{
         background-color: gs.$lightGray;
@@ -18,6 +35,9 @@
         border-radius: 2px;
         line-height: 2rem;
         box-shadow: gs.$btnShadow;
+        width: 100%;
+        margin: 0.5rem 0 1rem;
+        padding-left: 0.5rem;
     }
     &__heading{
         line-height: 39px;
@@ -27,8 +47,33 @@
         margin: 3.5rem 0 5.125rem 0;
         display: grid;
         justify-items: end;
+        &:disabled{
+           opacity: 0.35; 
+        }
+        &--login{
+            display: block;
+        }
     }
     &__star{
         color: gs.$orange;
+    }
+    &__error{
+        border: 2px solid red;
+        &--msg{
+            font-size: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+    &__postal{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 1.5rem;
+    }
+  }
+
+    &__checkbox{
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
     }
 }

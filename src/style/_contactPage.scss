@@ -1,0 +1,30 @@
+@use './globalStyles' as gs; 
+
+.contactpage__heading, .heading__under__form {
+    align-self: center;
+}
+
+.contactinfo {
+    padding: 2.25rem;
+    grid-row: 2/2;
+    &____heading {
+        grid-row: 1/1;
+        font-size: 3.4rem;
+        font-weight: 300;
+        color: gs.$darkGrey;
+        padding-left: 2.5rem;
+    }
+    &__h3{
+        margin-top: 2rem;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        &--orange{
+            color: gs.$orange;
+        }
+    }
+}
+
+.contactpage__heading, .contactinfo {
+    grid-column: 1/1;
+}

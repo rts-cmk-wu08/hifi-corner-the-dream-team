@@ -3,7 +3,7 @@
 .homepage{
     &__h2{
         text-transform: uppercase;
-        margin: 2rem 2rem;
+        margin: 0.5rem 0.4rem;
         &--white{
             color: white;
             margin-left: 0;
@@ -29,6 +29,7 @@
     grid-template-columns: 2fr 1fr;
     column-gap: 15rem;
     padding: 7.375rem 3.125rem;
+    margin-bottom: 7.5rem;
    }
    &__p{
     color: white;
@@ -39,5 +40,12 @@
     &--black{
         font-weight: 700;
     }
+   }
+
+   &__flex {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 1rem 3rem;
    }
 }

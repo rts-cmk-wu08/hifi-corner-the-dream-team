@@ -1,16 +1,46 @@
+
 import Video from "../components/Video";
 import ProductCard from "../templates/productCard";
 
+import Button from "../components/Button";
+import PopularProducts from "./PopularProducts";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
+
 const HomePage = () => {
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState();
+  // const [productsHomePage, setProductsHomePage] = useState();
+
+  // useEffect(() => {
+  //   axios("http://localhost:4000/products")
+  //   .then(response => setProductsHomePage(response.data))
+  //   .catch(() => setError("Oops!!, something went wrong"))
+  //   .finally(() => setLoading(false))
+  // }, []);
+
   return (
     <article className="homepage">
-      <h2 className="homepage__h2">popular products</h2>
+      <video
+        autoPlay
+        muted
+        className="hero__video"
+        src="hero_video.mp4"
+      ></video>
+      <div className="homepage__flex">
+        <h2 className="homepage__h2">popular products</h2>
+        <Button destination="/productpage" text="See all products" />
+      </div>
       <section className="homepage__products">
+
         <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />
         <Video />
+
+        <PopularProducts />
+
       </section>
       <section className="homepage__info">
         <div className="homepage__what">

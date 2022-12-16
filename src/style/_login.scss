@@ -1,0 +1,32 @@
+@use './globalStyles' as gs; 
+
+.login{
+    &__new{
+        background-color: white;
+        margin: 0 auto 2rem auto;
+        padding: 5.125rem 3rem;
+        box-shadow: gs.$cardShadow;
+    }
+    &__h3{
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+        font-weight: 600;
+        font-size: 24px;
+        &--center{
+            text-align: center;
+        }
+    }
+    &__p{
+        font-size: 14px;
+        color: gs.$darkGrey;
+        margin-bottom: 3rem;
+        &--center{
+            text-align: center;
+        }
+    }
+    &__btn{
+        justify-self: center;
+        max-width: 210px;
+
+    }
+}
