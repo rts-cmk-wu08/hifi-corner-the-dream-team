@@ -3,6 +3,7 @@ import "./App.scss";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
 import { ShoppingCartProvider } from "./context/CartContext.tsx";
+//import FetchTest from "./components/fetchTest";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="app">
         <Header />
         <main className="main">
+          {/* <FetchTest /> */}
           <Outlet />
         </main>
         <Footer />

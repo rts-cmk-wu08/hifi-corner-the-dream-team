@@ -1,7 +1,11 @@
+import NewCustomerForm from "../formComponents/newCustomerForm";
+
 const CreateAccount = () => {
-    return ( 
-        <></>
-     );
-}
- 
+  return (
+    <>
+      <NewCustomerForm />
+    </>
+  );
+};
+
 export default CreateAccount;

@@ -1,6 +1,7 @@
 import { Form, Formik } from "formik";
 import CustomCheckbox from "./customeCheckbox";
 import CustomInput from "./CustomInput";
+import { createAccountSchema } from "./formValidation";
 
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -11,7 +12,7 @@ const NewCustomerForm = () => {
   return (
     <Formik
       initialValues={{ fullname: "", email: "", subject: "", message: "" }}
-      validationSchema={contactSchema}
+      validationSchema={createAccountSchema}
       onSubmit={onSubmit}
     >
       {({ isSubmitting }) => (
