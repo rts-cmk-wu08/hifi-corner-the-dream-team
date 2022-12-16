@@ -8,7 +8,11 @@ import ImageSlider from "./templates/ImageSlider";
 import { SliderData } from "./templates/SliderData";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import ContactFormTwo from "./formComponents/contactForm";
+import SearchBar from "./components/SearchBar";
+import HomePage from "./pages/HomePage";
+import CartCard from "./templates/cartCard";
+import PaymentPageForm from "./templates/paymentPageForm";
+
 
 import CartContextProvider from "./context/cartContext";
 
