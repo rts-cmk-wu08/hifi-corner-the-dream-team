@@ -17,8 +17,10 @@ import AboutUs from "./pages/AboutUs";
 import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 import PaymentPage from "./pages/PaymentPage";
+import CreateAccount from "./pages/CreateAccount";
 import Login from "./pages/Login";
 import InvoicePage from "./pages/InvoicePage";
+import ProfilePage from "./pages/ProfilePage";
 import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter(
@@ -31,6 +33,8 @@ export const router = createBrowserRouter(
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/paymentpage" element={<PaymentPage />} />
+      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/createAccount" element={<CreateAccount />} />
       <Route path="/login" element={<Login />} />
       <Route path="/invoice" element={<InvoicePage />} />
       <Route path="/contactpage" element={<ContactPage />} />

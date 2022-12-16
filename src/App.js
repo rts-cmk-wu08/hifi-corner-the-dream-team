@@ -11,21 +11,21 @@ import Header from "./components/Header";
 // import HomePage from "./pages/HomePage";
 // import CartCard from "./templates/cartCard";
 // import PaymentPageForm from "./templates/paymentPageForm";
-
-
 import CartContextProvider from "./context/cartContext";
+import Footer from "./templates/Footer";
+import Header from "./components/Header";
+//import CartContextProvider from "./context/cartContext";
+
 
 function App() {
   return (
-    <CartContextProvider>
-      <div className="app">
-        <Header />
-        <main className="main">
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
-    </CartContextProvider>
+    <div className="app">
+      <Header />
+      <main className="main">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
