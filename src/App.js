@@ -5,11 +5,13 @@ import SearchBar from "./components/SearchBar";
 import Video from "./components/Video";
 import HomePage from "./pages/HomePage";
 import CartCard from "./templates/cartCard";
+import ContactInfo from "./components/ContactInfo";
+import HomePage from "./pages/homepage";
 
 function App() {
   return (
     <div className="app">
-      < CartCard />
+      <ContactInfo />
       <HomePage />
       <SearchBar />
       <Header />
@@ -18,5 +20,8 @@ function App() {
       )
       }
 
+    </div>
+  );
+}
 
 export default App;
