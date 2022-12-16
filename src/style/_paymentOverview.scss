@@ -1,0 +1,28 @@
+@use './globalStyles' as gs; 
+
+.payment-overview{
+    background-color: white;
+    margin: 0 auto auto;
+    padding: 2rem 3.5rem 3rem 2rem;
+    box-shadow: gs.$cardShadow;
+    max-width: 1200px;
+    &__ul{
+        border-bottom: 2px solid gs.$mediumGrey;
+        &--delivery{
+            border-bottom: none;
+        }
+    }
+    &__li{
+        display: flex; 
+        justify-content: space-between;
+        padding-right: 1.5rem;
+        &--right{
+            justify-content: end;
+        }
+    }
+    &__p{
+        color: gs.$darkGrey;
+        font-weight: 200;
+        font-size: 14px;
+    }
+}

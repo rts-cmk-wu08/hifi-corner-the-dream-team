@@ -1,14 +1,13 @@
 import { Form, Formik } from "formik";
+import CustomCheckbox from "./customeCheckbox";
 import CustomInput from "./CustomInput";
-import { contactSchema } from "./formValidation";
-import TextareaInput from "./textareaInput";
 
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm();
 };
 
-const ContactFormTwo = () => {
+const NewCustomerForm = () => {
   return (
     <Formik
       initialValues={{ fullname: "", email: "", subject: "", message: "" }}
@@ -19,14 +18,21 @@ const ContactFormTwo = () => {
         <Form>
           <div className="form">
             <div className="form__short">
-              <CustomInput label="Fullname" name="fullname" type="text" />
+              <CustomInput label="Firstname" name="firstname" type="text" />
+              <CustomInput label="Lastname" name="lastname" type="text" />
               <CustomInput label="Email" name="email" type="text" />
-              <CustomInput label="Subject" name="subject" type="text" />
+              <CustomInput label="Password" name="password" type="text" />
+              <CustomInput
+                label="Repeat password"
+                name="repeatPassword"
+                type="text"
+              />
+              <CustomCheckbox type="checkbox" name="dataStorage" />
+              <CustomCheckbox type="checkbox" name="newsletter" />
             </div>
-            <TextareaInput label="Message" name="message" cols="30" rows="10" />
             <div className="form__btn">
               <button className="button" type="submit" disabled={isSubmitting}>
-                <p className="button__link">Submit</p>
+                <p className="button__link">Create account</p>
               </button>
             </div>
           </div>
@@ -36,4 +42,4 @@ const ContactFormTwo = () => {
   );
 };
 
-export default ContactFormTwo;
+export default NewCustomerForm;
