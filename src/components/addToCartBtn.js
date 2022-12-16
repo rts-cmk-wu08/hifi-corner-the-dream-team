@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Button = (props) => {
+const AddButton = (props) => {
   return (
     <button className="button">
       <Link className="button__link" to={props.destination}>
@@ -10,4 +10,4 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default AddButton;

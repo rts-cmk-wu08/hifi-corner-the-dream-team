@@ -1,6 +1,7 @@
 import { useContext, createContext, ReactNode, useState } from "react";
 import React from "react";
 
+//asigned the children property ReactNode 
 type ShoppingCartProviderProps = {
   children: ReactNode,
 };
