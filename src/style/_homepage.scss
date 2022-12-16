@@ -1,11 +1,9 @@
 @use "./globalStyles" as gs;
 
 .homepage{
-    max-width: 1077px;
-    margin: 0 auto;
     &__h2{
         text-transform: uppercase;
-        margin: 2rem 2rem;
+        margin: 0.5rem 0.4rem;
         &--white{
             color: white;
             margin-left: 0;
@@ -44,8 +42,10 @@
     }
    }
 
-   &__video {
-    width: 1077px;
+   &__flex {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 1rem 3rem;
    }
 }
-

@@ -1,83 +1,38 @@
-import Button from "../components/Button";
-import { useFormik } from "formik";
+import { Form, Formik } from "formik";
+import CustomInput from "./CustomInput";
 import { contactSchema } from "./formValidation";
+import TextareaInput from "./textareaInput";
+
+const onSubmit = async (values, actions) => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  actions.resetForm();
+};
 
 const ContactFormTwo = () => {
-  const { values, errors, handleBlur, handleChange, handleSubmit } = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    },
-    validationSchema: contactSchema,
-  });
   return (
-    <div className="form">
-      <form onSubmit={handleSubmit} className="form__form">
-        {/* ---- NAME ---- */}
-        <div className="form__container--short">
-          <label htmlFor="name" className="form__label">
-            Full Name <span className="form__star">*</span>
-          </label>
-          <input
-            id="name"
-            type="text"
-            className="form__input"
-            value={values.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-        </div>
-        {/* ---- EMAIL ---- */}
-        <div className="form__container--short">
-          <label htmlFor="email" className="form__label">
-            Email <span className="form__star">*</span>
-          </label>
-          <input
-            id="email"
-            type="email"
-            className="form__input"
-            value={values.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-        </div>
-        {/* ---- SUBJECT ---- */}
-        <div className="form__container form__container--short">
-          <label htmlFor="subject" className="form__label">
-            Subject <span className="form__star">*</span>
-          </label>
-          <input
-            id="subject"
-            type="text"
-            className="form__input"
-            value={values.subject}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-        </div>
-        {/* ---- MESSAGE ---- */}
-        <div className="form__container">
-          <label htmlFor="message" className="form__label">
-            Message <span className="form__star">*</span>
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            value={values.message}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          ></textarea>
-        </div>
-        {/* ---- BUTTON ---- */}
-        <div className="form__btn">
-          <Button destination="/" text="Submit" />
-        </div>
-      </form>
-    </div>
+    <Formik
+      initialValues={{ fullname: "", email: "", subject: "", message: "" }}
+      validationSchema={contactSchema}
+      onSubmit={onSubmit}
+    >
+      {({ isSubmitting }) => (
+        <Form>
+          <div className="form">
+            <div className="form__short">
+              <CustomInput label="Fullname" name="fullname" type="text" />
+              <CustomInput label="Email" name="email" type="text" />
+              <CustomInput label="Subject" name="subject" type="text" />
+            </div>
+            <TextareaInput label="Message" name="message" cols="30" rows="10" />
+            <div className="form__btn">
+              <button className="button" type="submit" disabled={isSubmitting}>
+                <p className="button__link">Submit</p>
+              </button>
+            </div>
+          </div>
+        </Form>
+      )}
+    </Formik>
   );
 };
 

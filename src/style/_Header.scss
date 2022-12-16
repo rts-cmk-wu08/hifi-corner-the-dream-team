@@ -1,70 +1,211 @@
 @use './globalStyles' as gs; 
 
-header{
-  background-color: black;
-  height: 6rem;
-  width: 100%;
-}
-.navbar__onLine{
-  display: inline;
-  padding-left: 2rem;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
+// .header{
+//   background-color: black;
+//   height: 6rem;
+//   width: 100%;
+
+//   &__right {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     gap: 2rem;
+//     bottom: 0.5rem;
+//   }
+
+//   &__wrapper {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr ;
+//   }
+
+// }
+// .navbar__onLine{
+//   display: inline;
+//   padding-left: 2rem;
+//   font-size: 1.4rem;
+//   text-transform: uppercase;
+// }
+
+// .text__decoration {
+//   text-decoration: none;
+// }
+
+// .shopList{
+//   padding: 0.4em;
+//   color: gs.$orange;
+//   width: 20rem;
+//   margin-right: auto;
+// }
+
+// .hif1cornerlogo{
+//   top: 1rem;
+//   width: 3rem;
+//   height: 3rem;
+//   left: 0.7rem;
+// }
+
+// .headerNavbar, .profile__icon, .cart__icon, .hif1cornerlogo, .header__right {
+//   position: relative;
+// }
+
+// .profile__icon, .navbar__onLine, .cart__icon {
+//   color: white;
+// }
+
+// .profile__icon, .cart__icon {
+//   font-size: 1.4rem;
+// }
+
+// .div__shopList{
+//   padding-top: 3rem;
+//   position: relative;
+//   width: 30rem;
+//   right: 56rem;
+// }
+
+// .shopElmNav {
+//   list-style-type: none;
+//   width: 60rem;
+// }
+
+  // &__right {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: flex-end;
+  //   gap: 2rem;
+  //   bottom: 0.5rem;
+  // }
+
+  // &__wrapper {
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr ;
+  // }
+  
+  // &__navbar{
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  // }
+  // &__right{
+  //   display: flex;
+  // }
+
+
 
 .text__decoration {
   text-decoration: none;
 }
 
-.shopList{
-  padding: 0.4em;
-  color: gs.$orange;
-  width: 20rem;
-}
-.hif1cornerlogo{
-  position: relative;
-  top: 1rem;
-  width: 3rem;
-  height: 3rem;
-  left: 0.7rem;
+// .text__decoration:hover {
+//   font-weight: bold;
+// }
+
+.list__style__type {
+  list-style-type: none;
+
 }
 
-.headerNavbar, .searchbar, .profile__icon {
-  position: relative;
-}
-
-.searchbar {
-  left: 48rem;
-  bottom: 2rem;
-}
-
-.profile__icon, .navbar__onLine {
+.white__text {
   color: white;
 }
 
-.profile__icon {
-  left: 63rem;
-  bottom: 4rem;
-  font-size: 1.8rem;
+header, .header__wrapper {
+  height: 6rem;
 }
 
-.div__shopList{
-  padding-top: 3rem;
-  position: relative;
-  left: 6rem;
-  width: 30rem;
-}
-
-.shopElmNav {
-  list-style-type: none;
-  width: 60rem;
+header {
+  width: 100%;
+  background-color: black;
 }
 
 
-.text__decoration {
-  text-decoration: none;
+.header__navbar {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  gap: 1.5rem;
 }
 
-.text__decoration:hover {
+.header__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  height: 6rem;
+}
+
+.shop {
+  cursor: pointer;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  bottom: 0.5rem;
+  grid-column: 2/2;
+  justify-content: flex-end;
+}
+
+.black {
+  color: black;
+}
+
+.cartContainerItems {
+  font-size: 1.05rem;
+  display: none;
+  background-color: white;
+  width: 20.56rem;
+  margin-left: 12rem;
+  border: 1px solid rgba(0, 0, 0, 0.423);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+  height: 25rem;
+  position: absolute;
+}
+
+.categories__wrapper {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.gap__text {
+  padding-bottom: 0.8rem;
+}
+
+.search {
+  grid-column: 2/2;
+}
+
+.browse__categories {
+  padding-left: 2.5rem;
+  padding-top: 0.7rem;
+  margin: 0;
+}
+
+.cartContainerItems--visible {
+  display: block;
+}
+
+.hif1cornerlogo {
+  margin-top: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.7rem;
+}
+
+.profile__icon, .cart__icon {
+  font-size: 1.4rem;
+}
+
+.product__list {
+  color: #A39161;
+}
+
+.nav__li:hover, .nav__li.active {
   font-weight: bold;
 }
