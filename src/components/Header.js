@@ -67,7 +67,7 @@ const Header = () => {
   <header className={visible ? "visible" : ``}>
   <div className='header__wrapper'>
   <nav className='header__navbar'>
-    <NavLink className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></NavLink>
+    <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
     <li className='white__text list__style__type shop nav__li {}' onClick={handlevisibility}>Shop</li>
       <NavLink className="text__decoration white__text list__style__type nav__li" to={"/AboutUs"}><li className="navbar__onLine">about us</li></NavLink>
       <NavLink className="text__decoration white__text list__style__type nav__li" to={"/ContactPage"}><li className="navbar__onLine">contact us</li></NavLink>
