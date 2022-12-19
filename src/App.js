@@ -10,6 +10,7 @@ import Footer from "./templates/Footer";
 // import CartCard from "./templates/cartCard";
 // import PaymentPageForm from "./templates/paymentPageForm";
 import Header from "./components/Header";
+import Video from "./components/Video";
 //import CartContextProvider from "./context/cartContext";
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <Video />
       <main className="main">
         <Outlet />
       </main>
