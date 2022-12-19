@@ -1,10 +1,43 @@
-.checkbox{
-    &__input{
-        height: 27px;
-        width: 27px;
-    }
-    &__label{
-        font-size: 10px;
-        text-align: center;
-    }
+.color__checkbox {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    grid-template-rows: repeat(2, 2rem);
+    column-gap: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.gold {
+    background: rgb(175,135,38);
+    background: linear-gradient(180deg, rgba(175,135,38,1) 0%, rgba(175,135,38,1) 17%, rgba(248,240,139,1) 100%);
+}
+
+.silver {
+    background: rgb(145,146,146);
+    background: linear-gradient(180deg, rgba(145,146,146,1) 0%, rgba(145,146,146,1) 17%, rgba(223,224,225,1) 100%);
+}
+
+.black {
+    background-color: black;
+}
+
+.border__hover {
+    border: 2px solid transparent;
+}
+
+.border__hover:hover {
+    border: 2px solid black;
+}
+
+.border__hover, .border__hover:hover {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2rem;
 }

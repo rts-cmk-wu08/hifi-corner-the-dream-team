@@ -46,9 +46,7 @@ const ProductDetails = () => {
             <h5 className="details__h5">(Digital Output)</h5>
             <p className="details__p">{product.description}</p>
             <div className="details__color">
-              <ColorCheckbox color="black" />
-              <ColorCheckbox color="silver" />
-              <ColorCheckbox color="gold" />
+              <ColorCheckbox />
             </div>
             <Price className="details__h4 details__h4--price" price={product.price + ".00"} />
             <div className="details__cart">
