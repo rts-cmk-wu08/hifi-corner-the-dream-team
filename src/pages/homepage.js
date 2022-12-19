@@ -1,7 +1,5 @@
-
-import Video from "../components/Video";
+import video from "../components/video"
 import ProductCard from "../templates/productCard";
-
 import Button from "../components/Button";
 import PopularProducts from "./PopularProducts";
 // import { useEffect, useState } from "react";

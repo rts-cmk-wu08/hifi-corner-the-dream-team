@@ -1,17 +1,13 @@
-import { Outlet } from "react-router-dom";
 import "./App.scss";
+import { Outlet } from "react-router-dom";
+import ShoppingCartProvider from "./context/CartContext"
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import Video from "./components/Video";
-import HomePage from "./pages/HomePage";
-import CartCard from "./templates/cartCard";
-import ContactInfo from "./components/ContactInfo";
 
 function App() {
   return (
-    <ShoppingCartProvider>
       <div className="app">
+        <ShoppingCartProvider>
         <Header />
         <main className="main">
           <Outlet />
