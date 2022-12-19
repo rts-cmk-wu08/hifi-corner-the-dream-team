@@ -13,7 +13,7 @@ const ProductCard = ({product}) => {
           <p className="product-card__dimensions">{product.general.dimensions}</p>
       </div>
           <Price className="product-card__price" price={product.price + ".00"} />
-      <Button destination="/productdetails" text="Read more" />
+      <Button destination={`/productdetails/${product.id}`} text="Read more" />
     </section>
   );
 };
