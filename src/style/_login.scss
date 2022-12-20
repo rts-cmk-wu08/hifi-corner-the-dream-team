@@ -6,6 +6,8 @@
         margin: 0 auto 2rem auto;
         padding: 5.125rem 3rem;
         box-shadow: gs.$cardShadow;
+        display: grid;
+        justify-items: center;
     }
     &__h3{
         text-transform: uppercase;
