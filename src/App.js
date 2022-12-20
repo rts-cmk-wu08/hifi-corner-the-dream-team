@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Video />
       <main className="main">
         <Outlet />
       </main>

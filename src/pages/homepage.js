@@ -18,6 +18,7 @@ const HomePage = () => {
 
   return (
     <article className="homepage">
+        <Video />
       <div className="homepage__flex">
         <h2 className="homepage__h2">popular products</h2>
         <Button destination="/productpage" text="See all products" />
