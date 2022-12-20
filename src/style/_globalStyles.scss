@@ -5,6 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 $primaryFont: 'open sans', 'san serif'; 
 
+
+
+/* ------------------------------------------------------------- */
+/* -- COLOR VARIABLES -- */
+$offWhite: #F4F4F2; 
+$lightGray: #E8E8E8; 
+$mediumGrey: #BBBFCA; 
+$darkGrey: #495464; 
+//black
+$orange: #FF6900; 
+
+
+/* ------------------------------------------------------------- */
 /* -- RESETS --*/
 html {
   box-sizing: border-box;
@@ -21,31 +34,83 @@ html {
 }
 
 img, 
+video, 
+video,  
 video{
   width: 100%;
   overflow: hidden;
 }
 
-/* -- COLOR VARIABLES -- */
-$offWhite: #F4F4F2; 
-$lightGray: #E8E8E8; 
-$mediumGrey: #BBBFCA; 
-$darkGrey: #495464; 
-//black
-$orange: #FF6900; 
+input, 
+textarea,
+button, 
+select{
+  display: block;
+  max-width: 100%;
+}
 
+
+/* ------------------------------------------------------------- */
+/* -- COLOR VARIABLES -- */
+// .main {
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+
+
+/* ------------------------------------------------------------- */
+/* -- TYPOGRAPHY -- */
+h1,
+h2,
+h3,
+h4{
+
+}
+
+h1{
+  font-size: 48px;
+  color: $darkGrey;
+  margin: 2.75rem 0 3.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 26px;
+  color: $darkGrey;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h3{
+  font-size: 24px;
+  color: black;
+  margin-top: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+/* ------------------------------------------------------------- */
 /* -- APP WRAPPER -- */
 .app{
-  max-width: 1200px;
-  background-color: $lightGray;
+  width: 100%;
+  background-color: $offWhite;
   margin: 0 auto;
+}
+
+.outlet{
+  max-width: 1200px;
 }
 
 /* -- DROPSHADOW VARIABLE -- */
 $btnShadow: rgba(0, 0, 0, 0.25) 2.5px 2.5px 2.6px; 
+$iconShadow: rgba(0, 0, 0, 0.25) 2px 4px 8px; 
 $cardShadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
 
 
+/* ------------------------------------------------------------- */
 /* -- BREAKING POINTS --*/
 $breakpoints: (
     'tablet': 600px, 
@@ -60,6 +125,7 @@ $breakpoints: (
 };
 
 
+/* ------------------------------------------------------------- */
 //BREAKPOINT TESTS (mobilefirst) 
 .square{
   width: 300px;
@@ -73,6 +139,8 @@ $breakpoints: (
   }
 }
 
+
+/* ------------------------------------------------------------- */
 /* -- GRIDS -- */
 .three-col-grid{
   display: grid;

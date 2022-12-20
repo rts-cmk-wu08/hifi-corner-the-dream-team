@@ -1,25 +1,23 @@
 import { Outlet } from "react-router-dom";
 import "./App.scss";
-import Productpage from "./pages/ProductPage";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import Video from "./components/Video";
-import HomePage from "./pages/HomePage";
-import CartCard from "./templates/cartCard";
-import ContactInfo from "./components/ContactInfo";
-import Faq from "./templates/Faq";
+//import CartContextProvider from "./context/cartContext";
+import { ShoppingCartProvider } from "./context/CartContext.tsx";
 
 
 function App() {
   return (
-    <div className="app">
-      <Productpage />
-      <Header />
-      <Video />
-      <Faq />
-      <Footer />
-      </div>
+    <ShoppingCartProvider>
+      <div className="app">
+        <Header />
+        <main className="main">
+          {/* <FetchTest /> */}
+          <Outlet />
+        </main>
+        <Footer />
+        </div>
+       </ShoppingCartProvider>
   );
 }
 
