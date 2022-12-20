@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import {BrowserRouter as Router, Link} from "react-router-dom"
+import {BrowserRouter as Link} from "react-router-dom"
 import { FaSearch } from 'react-icons/fa';
 
 var data = require("./MOCK_DATA.json");
@@ -15,18 +14,18 @@ export default function Search() {
   const onSearch = (searchTerm) => {
     setValue(searchTerm);
 
-    console.log("search ", searchTerm);
+    console.log("search", searchTerm);
   };
 
   return (
-    <div className="App">
+    <div className="div__searchwrapper">
     
       <div className="search-container">
         <div className="search-inner">
           <input placeholder="Search product..." type="text" value={value} onChange={onChange} className="input__search" />
           <div className="fontuser">
-      <Link to={"/Tets"}>
-      <FaSearch color="000000" />
+      <Link to={"/Test{`id`}"}>
+      <FaSearch />
       </Link>
           </div>
           </div>

@@ -1,12 +1,42 @@
 [
-    {"search_products": "Auralic Aries G2.1 Streamer"},
-    {"search_products": "JTL-101Y"},
-    {"search_products": "SACD-M3 (METAL)"},
-    {"search_products": "Remote Control RC005PMSA"},
-    {"search_products": "power-amplifier"},
-    {"search_products": "preamplifier"},
-    {"search_products": "Metal Front Panel"},
-    {"search_products": "int-amplifier"},
-    {"search_products": "vinyl-record"},
-    {"search_products": "tube-amplifier"}
+    {
+        "id": 1,
+        "search_products": "Auralic Aries G2.1 Streamer"
+    },
+    {
+        "id": 2,
+        "search_products": "JTL-101Y"
+    },
+    {
+        "id": 3,
+        "search_products": "SACD-M3 (METAL)"
+    },
+    {
+        "id": 4,
+        "search_products": "Remote Control RC005PMSA"
+    },
+    {
+        "id": 5,
+        "search_products": "power-amplifier"
+    },
+    {
+        "id": 6,
+        "search_products": "preamplifier"
+    },
+    {
+        "id": 7,
+        "search_products": "Metal Front Panel"
+    },
+    {
+        "id": 8,
+        "search_products": "int-amplifier"
+    },
+    {
+        "id": 9,
+        "search_products": "vinyl-record"
+    },
+    {
+        "id": 10,
+        "search_products": "tube-amplifier"
+    }
 ]

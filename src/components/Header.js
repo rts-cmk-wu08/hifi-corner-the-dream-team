@@ -32,7 +32,7 @@ const Header = () => {
           >
           </li>
 
-        <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+        {/* <div className="div__shopList" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         {isHovering && <p className="browseShopList">Browse Categories</p>}
         <Link className="text__decoration" to= {"/CDPlayers"}> {isHovering && <p className="shopList">CD Players</p>} </Link>
         <Link className="text__decoration" to= {"/CDPlayers"}> {isHovering && <p className="shopList">DVD Players</p>} </Link>
@@ -42,7 +42,7 @@ const Header = () => {
         <Link className="text__decoration" to= {"/IntegratedAmplifiers"}> {isHovering && <p className="shopList">Integrated Amplifiers</p>} </Link>
         <Link className="text__decoration" to= {"/PowerAmplifiers"}> {isHovering && <p className="shopList">Power Amplifiers</p>} </Link>
         <Link className="text__decoration" to= {"/TubeAmplifiers"}> {isHovering && <p className="shopList">Tube Amplifiers</p>} </Link>
-        </div>
+        </div> */}
     </header>
   );
 };

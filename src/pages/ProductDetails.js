@@ -32,6 +32,7 @@ const ProductDetails = () => {
               <ColorCheckbox color="black" />
               <ColorCheckbox color="silver" />
               <ColorCheckbox color="gold" />
+              
             </div>
             <div className="details__cart">
               <CountItems />
