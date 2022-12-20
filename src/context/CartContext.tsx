@@ -6,6 +6,7 @@ type ShoppingCartProviderProps = {
   children: ReactNode,
 };
 
+//type for cartItem array passed in setCartItems - all the info we need to store
 type CartItem = {
     id: number
     quantity: number
@@ -17,7 +18,7 @@ type ShoppingCartContext = {
     decreaseCartQuantity: (id: number) => void
     removeFromCart: (id: number) => void
 }
-
+//shoppingCardContext contains the four above values
 const ShoppingCartContext = createContext({} as ShoppingCartContext )
 
 export function useShoppingCart() {
