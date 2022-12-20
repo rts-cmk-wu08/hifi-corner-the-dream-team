@@ -1,6 +1,7 @@
 import { useContext, createContext, ReactNode, useState } from "react";
 import React from "react";
 
+//------------------ TYPES ------------------
 //asigned the children property ReactNode 
 type ShoppingCartProviderProps = {
   children: ReactNode,
@@ -13,25 +14,39 @@ type CartItem = {
 }
 
 type ShoppingCartContext = {
+    openCart: () => void
+    closeCart: () => void
     getItemQuantity: (id: number) => number
     increaseCartQuantity: (id: number) => void
     decreaseCartQuantity: (id: number) => void
     removeFromCart: (id: number) => void
+    cartQuantity: number
+    cartItems: CartItem[]
 }
-//shoppingCardContext contains the four above values
+// shoppingCardContext contains the four above values
 const ShoppingCartContext = createContext({} as ShoppingCartContext )
 
 export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
 
-
-export function ShoppingCartProvider({ children }: ShoppingCartProviderProps)
- {
+//------------------ SHOPPING CART PROVIDER ------------------
+export function ShoppingCartProvider({ children }: ShoppingCartProviderProps){
+    //got an empty array with a type of CartItem (see under types) 
+    const [ isOpen, setIsOpen] = useState(false)
     const [ cartItems, setCartItems ] = useState<CartItem[]>([])
 
+    const cartQuantity = cartItems.reduce(
+        (quantity, item) => item.quantity + quantity,
+        0
+      )
+    
+
+    const openCart = () => setIsOpen(true)
+    const closeCart = () => setIsOpen(false)
+
 function getItemQuantity(id: number) {
-    //if there is a product show the quantity or else show 0
+    //if this evaluates to something ()?) show quantity or else || 0
     return cartItems.find(item => item.id === id)?.quantity || 0
 }
 
@@ -83,8 +98,17 @@ function removeFromCart(id: number) {
 }
 
   return (
-    <ShoppingCartContext.Provider value={{ getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart}}>
+    <ShoppingCartContext.Provider value={{ 
+        getItemQuantity, 
+        increaseCartQuantity, 
+        decreaseCartQuantity, 
+        removeFromCart, 
+        openCart, 
+        closeCart, 
+        cartItems, 
+        cartQuantity}}>
         {children}
+        
     </ShoppingCartContext.Provider>
   )
 }

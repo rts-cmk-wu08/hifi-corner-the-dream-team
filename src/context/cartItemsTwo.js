@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 //import CountItems from "./CountItems";
 
-const FetchTest = () => {
+const CartTestTwo = () => {
   const { loading, error, data } = useFetch(
     "http://localhost:1337/api/products"
   );
@@ -20,9 +20,6 @@ const FetchTest = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
   console.log(data);
-
-  //   const titles = data.data.map((test) => test.attributes.title);
-  //   console.log(titles);
 
   return (
     <section className="product-card">
@@ -48,4 +45,4 @@ const FetchTest = () => {
   );
 };
 
-export default FetchTest;
+export default CartTestTwo;
