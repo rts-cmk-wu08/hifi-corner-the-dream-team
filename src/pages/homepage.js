@@ -3,6 +3,7 @@ import Video from "../components/Video";
 import ProductCard from "../templates/productCard";
 
 import Button from "../components/Button";
+import Video from "../components/Video";
 import PopularProducts from "./PopularProducts";
 // import { useEffect, useState } from "react";
 // import axios from "axios";
@@ -21,12 +22,6 @@ const HomePage = () => {
 
   return (
     <article className="homepage">
-      <video
-        autoPlay
-        muted
-        className="hero__video"
-        src="hero_video.mp4"
-      ></video>
       <div className="homepage__flex">
         <h2 className="homepage__h2">popular products</h2>
         <Button destination="/productpage" text="See all products" />
