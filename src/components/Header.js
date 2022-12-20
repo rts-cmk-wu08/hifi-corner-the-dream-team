@@ -67,7 +67,7 @@ const Header = () => {
   <header className={visible ? "visible" : ``}>
   <div className='header__wrapper'>
   <nav className='header__navbar'>
-    <NavLink className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></NavLink>
+    <Link className="text__decoration" to={"/"}><img className="hif1cornerlogo" src="hifi-corner-logo-01.svg" alt="hifi corner logo" /></Link>
     <li className='white__text list__style__type shop nav__li {}' onClick={handlevisibility}>Shop</li>
       <NavLink className="text__decoration white__text list__style__type nav__li" to={"/AboutUs"}><li className="navbar__onLine">about us</li></NavLink>
       <NavLink className="text__decoration white__text list__style__type nav__li" to={"/ContactPage"}><li className="navbar__onLine">contact us</li></NavLink>
@@ -82,7 +82,7 @@ const Header = () => {
      </div> */}
     </div>
      <ul className={`cartContainerItems ${visible ? "cartContainerItems--visible" : ""}`}>
-        <h2 className='black browse__categories'>Browse Categories</h2>
+        <h2 className='black__font browse__categories'>Browse Categories</h2>
       <div className='categories__wrapper'>
         <li className="list__style__type gap__text">
             <Link to= {"/CDPlayers"} className="text__decoration product__list">CD Players</Link>
