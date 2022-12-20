@@ -4,7 +4,6 @@ import Footer from "./templates/Footer";
 import Header from "./components/Header";
 //import CartContextProvider from "./context/cartContext";
 import { ShoppingCartProvider } from "./context/CartContext.tsx";
-import Video from "./components/Video";
 
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
     <ShoppingCartProvider>
       <div className="app">
         <Header />
-        <Video />
         <main className="main">
           {/* <FetchTest /> */}
           <Outlet />
