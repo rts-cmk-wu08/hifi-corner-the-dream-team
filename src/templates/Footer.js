@@ -3,7 +3,6 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
 import { RxTwitterLogo } from "react-icons/rx";
 import LiLinkFooter from "../components/LiLinkFooter";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
