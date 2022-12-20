@@ -1,0 +1,91 @@
+@use './globalStyles' as gs; 
+
+.details{
+    margin: 4rem auto;
+    padding-inline: 2.25rem;
+    max-width: 1200px;
+    &__product{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 2px solid gs.$mediumGrey;
+    }
+    &__card{
+        background-color: white;
+        box-shadow: gs.$cardShadow;
+        padding-inline: 2.25rem;
+    }
+    &__specification{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__h3{
+        grid-area: 1 / 1 / 1 / 3;
+        padding-left: 1.5rem;
+        margin-bottom: 3.5rem;
+        margin-top: 6.5rem;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &__h4{
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    &__h5{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    &__p{
+        margin-bottom: 1rem;
+    }
+    &__table{
+        line-height: 2.5;
+        border: none;
+        width: 100%;
+        padding-left: 2.25rem;
+        margin-bottom: 9rem;
+    }
+    &__color{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        justify-items: center;
+        gap: 8px;
+        justify-content: space-between;
+        margin: 2rem -0.5rem;
+    }
+    &__tr{
+        &:nth-child(even){
+            background-color: white;
+        }
+        &:nth-child(odd){
+            background-color: gs.$lightGray;
+        }
+    }
+    &__td{
+        text-align: center;
+        padding-inline: 10%;
+        &--br{
+            border-right: 2px solid gs.$mediumGrey;
+            font-weight: 700;
+        }
+    }
+    &__cart{
+        width: 100%;
+        grid-area: 3 / 2 ;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__td--br {
+        width: 12rem;
+    }
+}
+
+.productPrice {
+    display: flex;
+    margin-left: 0.8rem;
+}
+

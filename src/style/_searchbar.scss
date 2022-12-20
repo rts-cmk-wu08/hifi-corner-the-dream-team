@@ -1,12 +1,37 @@
-@use './globalStyles' as gs; 
+@use './globalStyles' as gs;
 
-.searchbar {
-    width: 12.56rem;
-    height: 2.4rem;
-    &__icon{
-        position: relative;
-        right: 2rem;
-        font-size: 1.5rem;
-        top: 0.3rem;
-    }
+.searchbar{
+  width: 200px;
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem;
+    align-items: center;
 }
+  &__input{
+    grid-area: 1 / 1;
+    background-color: white;
+    height: 38px;
+    padding-left: 12px;
+    border-radius: 3px;
+    border: none;
+}
+  &__btn{
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 1rem;
+}
+}
+
+.fontuser{
+  grid-area: 1 / 1;
+
+  }
+.input__search{
+  grid-area: 1 / 1;
+  padding-left: 0.25rem;
+}
+
+
+
