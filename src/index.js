@@ -28,7 +28,7 @@ export const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route index element={<HomePage />} />
       <Route path="/productpage" element={<ProductPage />} />
-      <Route path="/productdetails" element={<ProductDetails />} />
+      <Route path="/productdetails/:id" element={<ProductDetails />} />
       <Route path="/moreinfo" element={<MoreInfo />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/cart" element={<CartPage />} />
