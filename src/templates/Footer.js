@@ -61,18 +61,18 @@ const Footer = () => {
             <FiPhone className="footer__icon" /> 01324 629 011
           </p>
           <div className="footer__some-icons">
-            <Link>
+            <a href="https://facebook.com" target="_blank">
               <RiFacebookCircleLine className="footer__some-icon" />
-            </Link>
-            <Link>
+            </a>
+            <a href="https://youtube.com" target="_blank">
               <AiOutlineYoutube className="footer__some-icon" />
-            </Link>
-            <Link>
+            </a>
+            <a href="https://twitter.com" target="_blank">
               <RxTwitterLogo className="footer__some-icon" />
-            </Link>
-            <Link>
+            </a>
+            <a href="https://instagram.com.com" target="_blank">
               <AiOutlineInstagram className="footer__some-icon" />
-            </Link>
+            </a>
           </div>
         </section>
         <div className="footer__payment">
