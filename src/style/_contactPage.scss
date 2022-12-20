@@ -7,6 +7,8 @@
 .contactinfo {
     padding: 2.25rem;
     grid-row: 2/2;
+    max-width: 75rem;
+    margin: 0 auto;
     &____heading {
         grid-row: 1/1;
         font-size: 3.4rem;
