@@ -18,7 +18,10 @@ const HomePage = () => {
 
   return (
     <article className="homepage">
+      <section className="video__section">
         <Video />
+      </section>
+      <div className="homepage__wrapper">
       <div className="homepage__flex">
         <h2 className="homepage__h2">popular products</h2>
         <Button destination="/productpage" text="See all products" />
@@ -66,6 +69,7 @@ const HomePage = () => {
           <p className="homepage__p">Sunday: Closed</p>
         </div>
       </section>
+      </div>
     </article>
   );
 };
