@@ -1,5 +1,4 @@
 
-import Video from "../components/Video";
 import ProductCard from "../templates/productCard";
 
 import Button from "../components/Button";
