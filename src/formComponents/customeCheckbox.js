@@ -9,12 +9,14 @@ const CustomCheckbox = ({ label, ...props }) => {
         <input
           {...field}
           {...props}
-          className={meta.touched && meta.error ? "input-error" : ""}
+          className={meta.touched && meta.error ? "form__error" : ""}
         />
-        <span>Remember me</span>
+        <label>{label}</label>
       </div>
 
-      {meta.touched && meta.error && <div className="error">{meta.error}</div>}
+      {meta.touched && meta.error && (
+        <div className="form__error--msg">{meta.error}</div>
+      )}
     </>
   );
 };

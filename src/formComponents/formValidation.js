@@ -49,4 +49,18 @@ export const createAccountSchema = yup.object().shape({
   firstname: yup.string().required("Please enter your firstname"),
   lastname: yup.string().required("Please enter your lastname"),
   email: yup.string().email("* Please enter a valid email").required(),
+  password: yup
+    .string()
+    .required("Please Enter your password")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+    ),
+  confirmPassword: yup
+    .string()
+    .required()
+    .oneOf([yup.ref("password"), null], "Passwords must match"),
+  dataStorage: yup
+    .boolean()
+    .oneOf([true], "Please accept the terms of service"),
 });

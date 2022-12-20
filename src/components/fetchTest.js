@@ -1,4 +1,5 @@
 import useFetch from "../hooks/useFetch";
+import AddButton from "./addToCartBtn";
 import CountItems from "./CountItems";
 
 const FetchTest = () => {
@@ -16,14 +17,12 @@ const FetchTest = () => {
   return (
     <section className="product-card">
       {data.data.map((test) => (
-        //<div key={test.id} className="test-product">
         <div className="product-card__txts">
           <p>{test.attributes.title}</p>
           <p>{test.attributes.subtitle}</p>
           <br />
-
+          <AddButton text="Add to cart" />
         </div>
-        //</div>
       ))}
     </section>
   );
