@@ -1,7 +1,4 @@
-
-import Video from "../components/Video";
 import ProductCard from "../templates/productCard";
-
 import Button from "../components/Button";
 import Video from "../components/Video";
 import PopularProducts from "./PopularProducts";
@@ -28,15 +25,7 @@ const HomePage = () => {
         <Button destination="/productpage" text="See all products" />
       </div>
       <section className="homepage__products">
-
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <Video />
-
         <PopularProducts />
-
       </section>
       <section className="homepage__info">
         <div className="homepage__what">
