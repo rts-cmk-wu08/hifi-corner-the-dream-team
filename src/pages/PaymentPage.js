@@ -1,7 +1,13 @@
+import Breadcrumbs from "../components/Breadcrumb";
+import YourInfoForm from "../formComponents/YourInfoForm";
+
 const PaymentPage = () => {
-    return ( 
-        <></>
-     );
-}
- 
+  return (
+    <section className="payment">
+      <Breadcrumbs />
+      <YourInfoForm />
+    </section>
+  );
+};
+
 export default PaymentPage;

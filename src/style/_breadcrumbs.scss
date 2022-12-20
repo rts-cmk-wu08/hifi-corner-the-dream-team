@@ -1,0 +1,46 @@
+@use './globalStyles' as gs; 
+
+.breadcrumb{
+    width: 360px;
+    height: auto;
+    display: grid;
+    margin: 4rem 0 3rem;
+    &__background{
+        background-color: white;
+        height: 2rem;
+        align-self: center;
+        grid-area: 1 / 1;
+    }
+    &__container{
+        grid-area: 1 / 1;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 2px;
+    }
+    &__icon{
+        display: grid;
+        width: 4.375rem;
+        height: 4.375rem;
+        background-color: gs.$lightGray;
+        box-shadow: gs.$iconShadow;
+        color: gs.$darkGrey;
+        &:active{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    &__faIcon{
+        color: gs.$darkGrey;
+        height: auto;
+        width: 25px;
+        place-self: center;
+        &--large{
+            height: auto;
+            width: 2rem; 
+        }
+        &:active{
+            background-color: gs.$darkGrey;
+            color: white;
+        }
+    }
+}

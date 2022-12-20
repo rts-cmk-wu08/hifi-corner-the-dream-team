@@ -2,20 +2,22 @@ import { Outlet } from "react-router-dom";
 import "./App.scss";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
-import Video from "./components/Video";
-import HomePage from "./pages/HomePage";
-// import CartCard from "./templates/cartCard";
+//import CartContextProvider from "./context/cartContext";
+import { ShoppingCartProvider } from "./context/CartContext.tsx";
+
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Video />
-      <HomePage />
-      <Outlet />
-      <Footer />
-      
-      </div>
+    <ShoppingCartProvider>
+      <div className="app">
+        <Header />
+        <main className="main">
+          {/* <FetchTest /> */}
+          <Outlet />
+        </main>
+        <Footer />
+        </div>
+       </ShoppingCartProvider>
   );
 }
 
