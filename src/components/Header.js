@@ -82,7 +82,7 @@ const Header = () => {
      </div> */}
     </div>
      <ul className={`cartContainerItems ${visible ? "cartContainerItems--visible" : ""}`}>
-        <h2 className='black browse__categories'>Browse Categories</h2>
+        <h2 className='black__font browse__categories'>Browse Categories</h2>
       <div className='categories__wrapper'>
         <li className="list__style__type gap__text">
             <Link to= {"/CDPlayers"} className="text__decoration product__list">CD Players</Link>
