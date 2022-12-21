@@ -1,0 +1,11 @@
+@use './globalStyles' as gs; 
+
+.not-found{
+    box-shadow: gs.$cardShadow;
+    padding: 2rem;
+    margin: 4rem auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}

@@ -1,6 +1,8 @@
 @use './globalStyles' as gs; 
 
 .login{
+    max-width: 1200px;
+    margin: 0 auto;
     &__new{
         background-color: white;
         margin: 0 auto 2rem auto;

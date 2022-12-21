@@ -1,6 +1,5 @@
 import useFetch from "../hooks/useFetch";
 import AddButton from "./addToCartBtn";
-import CountItems from "./CountItems";
 
 const FetchTest = () => {
   const { loading, error, data } = useFetch(
@@ -10,9 +9,6 @@ const FetchTest = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
   console.log(data);
-
-  //   const titles = data.data.map((test) => test.attributes.title);
-  //   console.log(titles);
 
   return (
     <section className="product-card">
