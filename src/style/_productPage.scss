@@ -1,6 +1,8 @@
 @use './globalStyles' as gs; 
 
 .product-page{
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2.25rem;
     &__2grid{
     display: grid;
