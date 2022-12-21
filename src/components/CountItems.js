@@ -1,18 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { CartContext } from "../context/cartContext.js";
 
-const CountItems = () => {
+const CountItems = (props) => {
   const [itemCount, setItemCount] = useState(0);
 
-  const handleIncrease = () => itemCount < 10 && setItemCount(itemCount + 1);
-  const handleDecrease = () => itemCount > 0 && setItemCount(itemCount - 1);
+  const { handleAddToCart, handleRemoveFromCart, totalCount } =
+    useContext(CartContext);
+
+  useEffect(() => {
+    console.log("test count");
+  }, [itemCount]);
 
   return (
     <div className="flex__countitems">
-      <button className="minus" onClick={handleDecrease}>
+      <button
+        className="plus"
+        onClick={() => handleRemoveFromCart(props.idPlus)}
+      >
         -
       </button>
-      <div className="count__box">{itemCount}</div>
-      <button className="plus" onClick={handleIncrease}>
+      <div className="count__box">{totalCount}</div>
+      <button className="plus" onClick={() => handleAddToCart(props.idPlus)}>
         +
       </button>
     </div>

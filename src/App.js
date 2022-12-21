@@ -3,11 +3,12 @@ import "./App.scss";
 import Footer from "./templates/Footer";
 import Header from "./components/Header";
 //import CartContextProvider from "./context/cartContext";
-import { ShoppingCartProvider } from "./context/CartContext.tsx";
+//import { ShoppingCartProvider } from "./context/CartContext.tsx";
+import CartContextProvider from "./context/cartContext";
 
 function App() {
   return (
-    <ShoppingCartProvider>
+    <CartContextProvider>
       <div className="app">
         <Header />
         <main className="main">
@@ -15,7 +16,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </ShoppingCartProvider>
+    </CartContextProvider>
   );
 }
 

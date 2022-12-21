@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { useState, useContext } from "react";
+import { NavLink, Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
+import { CartContext } from "../context/cartContext.js";
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -11,6 +12,7 @@ const Header = () => {
     setVisible(!visible);
   };
   console.log(visible);
+  const { totalCount } = useContext(CartContext);
 
   return (
     <header className={visible ? "visible" : ``}>
@@ -46,7 +48,7 @@ const Header = () => {
           <SearchBar />
           <IoPersonSharp className="profile__icon white__text" />
           <FaShoppingCart className="cart__icon white__text" />
-          <p className="header__cart-count">0</p>
+          <p className="header__cart-count">{totalCount}</p>
         </div>
       </div>
       <ul
