@@ -10,7 +10,6 @@ const AddButton = (props) => {
   const quantity = getItemQuantity(data.data.id);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
-  //console.log(data);
 
   return (
     <section>
