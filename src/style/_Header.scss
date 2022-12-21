@@ -2,6 +2,7 @@
 
 
 
+
 .text__decoration {
   text-decoration: none;
 }
@@ -44,17 +45,23 @@ header {
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   gap: 1.5rem;
 }
 
 .header__wrapper {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   height: 6rem;
+  @include gs.breakpoint(tablet){
+    max-width: 800px;
+}
+@include gs.breakpoint(desktop){
+  max-width: 1200px;
+}
 }
 
 .shop {
@@ -131,3 +138,4 @@ header {
 .nav__li:hover, .nav__li.active {
   font-weight: bold;
 }
+
