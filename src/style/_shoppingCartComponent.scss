@@ -1,0 +1,51 @@
+@use './globalStyles' as gs; 
+
+.shopping-cart{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: gs.$cardShadow;
+    max-width: 310px;
+    border-bottom: 2px solid gs.$mediumGrey;
+    padding: 0.75rem;
+    border-radius: 5px;
+    &__heading,
+    &__amount,
+    &__total{
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 0;
+    }
+    &__total,
+    &__amount{
+        justify-content: space-between;
+    }
+    &__h1{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    &__ul{
+        margin-bottom: 7.5rem;
+    }
+    &__h3{
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    &__in-stock{
+        font-size: 0.625rem;
+    }
+    &__top{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        padding: 0.75rem 0;
+    }
+    &__img,
+    &__close{
+        grid-area: 1 / 1;
+    }
+    &__close{
+        align-self: flex-start;
+    }
+}
