@@ -4,8 +4,9 @@
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
+    justify-self: center;
     justify-items: center;
-    padding: 3rem 1.5rem 2rem 1.5rem;
+    padding: 3rem 2.5rem 2rem 2.5rem;
     box-shadow: gs.$cardShadow;
     height: auto;
     border-radius: 3px;

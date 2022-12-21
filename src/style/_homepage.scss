@@ -26,10 +26,15 @@
     background-color: black;
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
     column-gap: 15rem;
     padding: 7.375rem 3.125rem;
     margin-bottom: 7.5rem;
+    @include gs.breakpoint(tablet){
+        grid-template-columns: 1fr;
+    }
+    @include gs.breakpoint(desktop){
+        grid-template-columns: 2fr 1fr;
+    }
    }
    &__p{
     color: white;
