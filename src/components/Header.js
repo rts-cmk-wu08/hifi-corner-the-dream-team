@@ -46,10 +46,8 @@ const Header = () => {
           <SearchBar />
           <IoPersonSharp className="profile__icon white__text" />
           <FaShoppingCart className="cart__icon white__text" />
+          <p className="header__cart-count">0</p>
         </div>
-        {/* <div className="cartContainer">
-
-     </div> */}
       </div>
       <ul
         className={`cartContainerItems ${

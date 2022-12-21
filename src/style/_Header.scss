@@ -1,97 +1,5 @@
 @use './globalStyles' as gs; 
 
-// .header{
-//   background-color: black;
-//   height: 6rem;
-//   width: 100%;
-
-//   &__right {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     gap: 2rem;
-//     bottom: 0.5rem;
-//   }
-
-//   &__wrapper {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr ;
-//   }
-
-// }
-// .navbar__onLine{
-//   display: inline;
-//   padding-left: 2rem;
-//   font-size: 1.4rem;
-//   text-transform: uppercase;
-// }
-
-// .text__decoration {
-//   text-decoration: none;
-// }
-
-// .shopList{
-//   padding: 0.4em;
-//   color: gs.$orange;
-//   width: 20rem;
-//   margin-right: auto;
-// }
-
-// .hif1cornerlogo{
-//   top: 1rem;
-//   width: 3rem;
-//   height: 3rem;
-//   left: 0.7rem;
-// }
-
-// .headerNavbar, .profile__icon, .cart__icon, .hif1cornerlogo, .header__right {
-//   position: relative;
-// }
-
-// .profile__icon, .navbar__onLine, .cart__icon {
-//   color: white;
-// }
-
-// .profile__icon, .cart__icon {
-//   font-size: 1.4rem;
-// }
-
-// .div__shopList{
-//   padding-top: 3rem;
-//   position: relative;
-//   width: 30rem;
-//   right: 56rem;
-// }
-
-// .shopElmNav {
-//   list-style-type: none;
-//   width: 60rem;
-// }
-
-  // &__right {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: flex-end;
-  //   gap: 2rem;
-  //   bottom: 0.5rem;
-  // }
-
-  // &__wrapper {
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr ;
-  // }
-  
-  // &__navbar{
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  // }
-  // &__right{
-  //   display: flex;
-  // }
 
 
 
@@ -99,9 +7,6 @@
   text-decoration: none;
 }
 
-// .text__decoration:hover {
-//   font-weight: bold;
-// }
 
 .list__style__type {
   list-style-type: none;
@@ -120,23 +25,43 @@ header {
   width: 100%;
   background-color: black;
 }
-
+.header__cart-count{
+  // grid-area: 1 / 2;
+  background-color: gs.$orange;
+  height: 1rem;
+  width: 1rem;
+  color: white;
+  font-size: 10px;
+  line-height: 1rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 30px;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+}
 
 .header__navbar {
   display: flex;
   align-items: center;
   padding-left: 2rem;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   gap: 1.5rem;
 }
 
 .header__wrapper {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr ;
   height: 6rem;
+  @include gs.breakpoint(tablet){
+    max-width: 800px;
+}
+@include gs.breakpoint(desktop){
+  max-width: 1200px;
+}
 }
 
 .shop {
@@ -150,6 +75,8 @@ header {
   bottom: 0.5rem;
   grid-column: 2/2;
   justify-content: flex-end;
+  grid-area: 1 / 2;
+  position: relative;
 }
 
 .black__font {
@@ -200,7 +127,9 @@ header {
 
 .profile__icon, .cart__icon {
   font-size: 1.4rem;
+
 }
+
 
 .product__list {
   color: #A39161;
@@ -209,3 +138,4 @@ header {
 .nav__li:hover, .nav__li.active {
   font-weight: bold;
 }
+
