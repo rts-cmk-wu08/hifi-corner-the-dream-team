@@ -3,7 +3,7 @@
 .homepage{
     &__h2{
         text-transform: uppercase;
-        margin: 0.5rem 2rem;
+        margin: 0.5rem 0.4rem;
         &--white{
             color: white;
             margin-left: 0;
@@ -44,7 +44,14 @@
 
    &__flex {
     display: flex;
-    gap: 33rem;
+    justify-content: space-between;
     height: 3rem;
+    margin: 1rem 3rem;
+   }
+
+   &__wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
    }
 }
+

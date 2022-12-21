@@ -1,5 +1,4 @@
 import CountItems from "../components/CountItems";
-import Price from "../components/price";
 
 const CartCard = () => {
   return (

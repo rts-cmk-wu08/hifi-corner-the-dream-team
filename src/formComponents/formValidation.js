@@ -1,7 +1,7 @@
 import * as yup from "yup";
 
 export const contactSchema = yup.object().shape({
-  name: yup.string().required("* Please enter your name"),
+  fullname: yup.string().required("* Please enter your name"),
   email: yup.string().email("* Please enter a valid email").required(),
   subject: yup.string().required("* Please enter a subject"),
   message: yup.string().max(500).required("* Please write a message"),
@@ -38,4 +38,29 @@ export const yourInfoSchema = yup.object().shape({
     .max(100, "Address cannot be more than 100 characters long"),
   email: yup.string().email("* Please enter a valid email").required(),
   phone: yup.string().matches(phoneRegExp, "* Phone number is not valid"),
+});
+
+export const loginSchema = yup.object().shape({
+  username: yup.string().required("Please enter your name"),
+  email: yup.string().email("* Please enter a valid email").required(),
+});
+
+export const createAccountSchema = yup.object().shape({
+  firstname: yup.string().required("Please enter your firstname"),
+  lastname: yup.string().required("Please enter your lastname"),
+  email: yup.string().email("* Please enter a valid email").required(),
+  password: yup
+    .string()
+    .required("Please Enter your password")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+    ),
+  confirmPassword: yup
+    .string()
+    .required()
+    .oneOf([yup.ref("password"), null], "Passwords must match"),
+  dataStorage: yup
+    .boolean()
+    .oneOf([true], "Please accept the terms of service"),
 });

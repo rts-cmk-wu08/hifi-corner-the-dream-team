@@ -1,0 +1,14 @@
+@use './globalStyles' as gs; 
+
+.your-info{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 2.75rem;
+    &__h3{
+        color: gs.$darkGrey;
+        margin: 0 0 1rem;
+        &--2col{
+            grid-column: 1 / span 2;
+        }
+    }
+}
