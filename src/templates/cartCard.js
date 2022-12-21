@@ -1,6 +1,5 @@
 import CountItems from "../components/CountItems";
 
-
 const CartCard = () => {
   return (
     <section className="cart-card">

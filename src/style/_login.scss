@@ -1,11 +1,15 @@
 @use './globalStyles' as gs; 
 
 .login{
+    max-width: 1200px;
+    margin: 0 auto;
     &__new{
         background-color: white;
         margin: 0 auto 2rem auto;
         padding: 5.125rem 3rem;
         box-shadow: gs.$cardShadow;
+        display: grid;
+        justify-items: center;
     }
     &__h3{
         text-transform: uppercase;
