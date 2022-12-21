@@ -40,7 +40,7 @@ const ProductDetails = () => {
       <section className="details__card">
         <section className="details__product">
           {/* gallery */}
-          <img src="" alt="" />
+          <img className="product__image" src={product.image.url} alt="" />
             <div className="details__txt">
             <h4 className="details__h4">{product.name}</h4>
             <h5 className="details__h5">(Digital Output)</h5>
