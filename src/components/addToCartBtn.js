@@ -1,27 +1,16 @@
 import { Link } from "react-router-dom";
-import { useShoppingCart } from "../context/CartContext.tsx";
-import useFetch from "../hooks/useFetch";
+import { CartContext } from "../context/cartContext.js";
+import { useContext } from "react";
 
 const AddButton = (props) => {
-  const { loading, error, data } = useFetch(
-    "http://localhost:1337/api/products/"
-  );
-  const { getItemQuantity, increaseCartQuantity } = useShoppingCart();
-  const quantity = getItemQuantity(data.data.id);
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
+  const { handleAddToCart } = useContext(CartContext);
 
   return (
-    <section>
-      <button
-        className="button"
-        onClick={() => increaseCartQuantity(data.data.id)}
-      >
-        <Link className="button__link" to={props.destination}>
-          {props.text}
-        </Link>
-      </button>
-    </section>
+    <button className="button" onClick={() => handleAddToCart(props.addBtn)}>
+      <Link className="button__link" to={props.destination}>
+        {props.text}
+      </Link>
+    </button>
   );
 };
 

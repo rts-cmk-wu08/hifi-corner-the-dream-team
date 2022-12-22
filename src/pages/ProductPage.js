@@ -13,13 +13,13 @@ const Productpage = () => {
       .then((response) => setProducts(response.data))
       .catch(() => setError("Oops!!, something went wrong"))
       .finally(() => setLoading(false));
+    console.log(products);
   }, []);
 
   return (
     <section className="product-page">
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
-
       <h1 className="product-page__h1">products</h1>
       <div className="product-page__2grid">
         <section className="product-page__sort">
