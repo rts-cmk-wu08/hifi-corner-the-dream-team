@@ -10,7 +10,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProductPage from "./pages/ProductPage";
+import NewProductPage from "./pages/NewProductPage";
 import ProductDetails from "./pages/ProductDetails";
 import MoreInfo from "./pages/MoreInfo";
 import AboutUs from "./pages/AboutUs";
@@ -27,7 +27,7 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<HomePage />} />
-      <Route path="/productpage" element={<ProductPage />} />
+      <Route path="/productpage" element={<NewProductPage />} />
       <Route path="/productdetails/:id" element={<ProductDetails />} />
       <Route path="/moreinfo" element={<MoreInfo />} />
       <Route path="/aboutus" element={<AboutUs />} />

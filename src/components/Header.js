@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
+import SearchBarNew from "./SearchBarNew";
 import { IoPersonSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { CartContext } from "../context/cartContext.js";
@@ -12,6 +12,7 @@ const Header = () => {
     setVisible(!visible);
   };
   console.log(visible);
+  
   const { totalCount } = useContext(CartContext);
 
   return (
@@ -45,7 +46,7 @@ const Header = () => {
           </NavLink>
         </nav>
         <div className="header__right">
-          <SearchBar />
+          <SearchBarNew />
           <IoPersonSharp className="profile__icon white__text" />
           <FaShoppingCart className="cart__icon white__text" />
           <p className="header__cart-count">{totalCount}</p>
