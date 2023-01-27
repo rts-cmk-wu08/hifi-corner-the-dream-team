@@ -22,7 +22,7 @@ const PopularProducts = () => {
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
         {products && products.map(product => (
-          <ProductCard product={product}/>
+          <ProductCard key={product.id} product={product}/>
 
         ))}
 

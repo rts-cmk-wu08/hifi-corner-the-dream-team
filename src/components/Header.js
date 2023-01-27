@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { IoPersonSharp } from "react-icons/io5"
-import { FaShoppingCart } from "react-icons/fa";
+import CartWidget from "./CartWidget";
 
 const Header = () => {
   // const [isHovering, setIsHovering] = useState(false);
@@ -75,7 +75,7 @@ const Header = () => {
      <div className="header__right">
       <SearchBar />
       <IoPersonSharp className="profile__icon white__text"/>
-      <FaShoppingCart className="cart__icon white__text"/>
+      <CartWidget />
    </div>
      {/* <div className="cartContainer">
 
